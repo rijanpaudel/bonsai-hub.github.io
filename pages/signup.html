@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--Declaration of document type(informing the web browser that HTML5 version is used) -->
+<html>
+<!--Beginning of HTML element-->
+
+<head>
+  <!-- meta tags -->
+
+  <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+  <meta name="description" content="In this webpage you will signup your account" />
+
+
+  <!-- A <meta> tag with a "name" attribute set to "keyword" and a "content" attribute that contains a list of keywords related to the webpage. -->
+  <meta name="keyword" content="bonsai, bonai website, bonsai hub, buy bonsai plant" />
+
+
+  <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+  <meta name="author" content="miraj deep bhandari, rijan paudel, jenish katwal , umang pradhananga, gazal bishowkarma" />
+
+  <!-- A <meta> tag with a "http-equiv" attribute set to "X-UA-Compatible" and a "content" attribute set to "IE=edge" -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+  <link rel="stylesheet" href="../css/form.css">
+  <!--Specifying relationship between signup.html and form.css-->
+  <title>Sign Up</title>
+  <!--Defining the title of the webpage-->
+
+
+</head>
+
+
+<body>
+  <script src="../javascript/signup_validate.js"></script>
+
+  <!-- Header element containing the logo and navigation bar -->
+
+
+
+  <nav>
+    <img src="../images/logo.png" class="logo">
+
+    <div class="flex_nav">
+
+      <ul id="resp_nav">
+        <img src="../icons/close1.png" style="position: absolute; width: 3rem;" class="togmenu menuclose"
+          onclick="closever()">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="blog.html ">Blog</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="about.html">About us</a></li>
+        <a href="signup.html" class="sbutton" id="signup_button">Sign up</a>
+        <a href="login.html" class="sbutton" id="signin_button">Sign in</a>
+      </ul>
+
+    </div>
+    <figure class="ham">
+
+      <img src="../icons/menu2.png" class="togmenu closeit" onclick="openver()">
+      <!-- <img src="icons/close1.png" style="position: absolute; width: 3rem;" class="togmenu"> -->
+
+    </figure>
+
+
+  </nav>
+
+
+
+
+
+  <!-- The div element with the id of "container_signup" 
+  appears to be a container for the sign up form. -->
+  <div id="container_signup">
+
+
+    <!-- The div element with the class of "form-wrap" appears to be a wrapper for the sign up form. -->
+    <div class="form-wrap">
+
+      <!-- The form element with the name "form2" appears to be the sign 
+        up form. It has an attribute onsubmit which specifies a function
+         to be run when the form is submitted. -->
+      <form name="form2" onsubmit="validate()">
+
+        <!-- The div elements with the class of "form-group" appear 
+          to be groups of form elements (e.g. a label and input). -->
+        <div class="form-group">
+
+          <!-- The label elements are used to label form elements. -->
+
+          <label for="full-name">Full Name</label>
+
+          <!-- The input elements are used to accept user input. -->
+
+          <input type="text" name="fullname" id="full-name">
+
+        </div>
+
+
+
+        <div class="form-group">
+
+          <!-- The label elements are used to label form elements. -->
+
+          <label for="email">Email</label>
+
+          <!-- The input elements are used to accept user input. -->
+          <input type="email" name="email" id="email">
+        </div>
+
+
+        <div class="form-group">
+          <!-- The label elements are used to label form elements. -->
+          <label for="phonenumber">Phone Number</label>
+
+          <!-- The input elements are used to accept user input. -->
+          <input type="Number" name="phonenumber" id="phonenumber">
+        </div>
+
+
+        <div class="form-group">
+          <!-- The label elements are used to label form elements. -->
+          <label for="gender">Gender</label>
+
+          <!-- The select element is used to create a dropdown menu -->
+          <select name="gender" id="box">
+
+            <!-- The option elements are used to specify options in the dropdown menu -->
+            <option value="male" id="box">Male</option>
+
+            <!-- The option elements are used to specify options in the dropdown menu -->
+            <option value="female" id="box">Female</option>
+
+          </select>
+
+        </div>
+
+
+
+        <div class="form-group">
+          <!-- The label elements are used to label form elements. -->
+          <label for="password">Password</label>
+
+          <!-- The input elements are used to accept user input. -->
+          <input type="password" name="password" id="password">
+        </div>
+
+
+        <div class="form-group">
+          <!-- The label elements are used to label form elements. -->
+          <label for="cpass">Confirm Password</label>
+
+          <!-- The input elements are used to accept user input. -->
+          <input type="password" name="confirmpassword" id="confirmpassword">
+
+        </div>
+
+        <!-- The button element is used to submit the form. -->
+        <button type="submit">Sign Up</button><br>
+
+        <!-- footer starts from here -->
+        <footer>
+
+          <div>
+            <!-- The input elements are used to accept user input. -->
+            <input type="checkbox">
+
+            <!-- The label elements are used to label form elements. -->
+            <label for=""> By Clicking the Check Button, I agree to Bonsai Hub's Terms of Use and Privacy Policy
+              <a href="#">Term & Conditions</a> and <a href="#">Primary Policy</a></label>
+
+        </footer>
+
+      </form>
+
+
+    </div>
+
+    <!-- The footer element appears to contain a
+       checkbox and a label. The checkbox is related to agreeing
+        to terms and conditions, and the 
+        label provides more information about this. -->
+    <footer>
+      <p><span style="color:white;">Already Have an Account? </span><a href="login.html">Login Here</a></p>
+    </footer>
+  </div>
+</body>
+
+<script>
+
+  function openver() {
+
+    document.getElementById('resp_nav').style.right = '0%';
+
+  }
+  function closever() {
+
+    document.getElementById('resp_nav').style.right = '100%';
+
+  }
+
+
+
+</script>
+
+</html>

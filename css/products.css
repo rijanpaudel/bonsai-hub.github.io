@@ -1,0 +1,995 @@
+html {
+  font-size: 100%;
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: smallcursive;
+  src: url("../fonts/smallcursive.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: bigbold;
+  src: url("../fonts/bigbold.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: slogan;
+  src: url("../fonts/slogan.ttf");
+}
+
+/* The html element has a font-size of 100%, which sets the 
+  default font size for the page to be equal 
+  to the default size of the user's web browser */
+
+/* The * rule applies to all elements on the page, setting 
+  the default padding and margin to 0 for all elements. */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* The nav element has a position of relative, which means that any 
+  absolutely positioned elements within it will be positioned relative 
+  to the nav element itself, rather than the entire page. */
+
+nav {
+  position: relative;
+}
+
+/* The #hed element has a display of block, a height of 100vh, and a width of 
+  100%, which makes it take up the full height and width of the viewport. 
+  It also has a position of relative and a top value of -0.4875rem, 
+  which shifts it upward slightly.*/
+
+#hed {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: -0.4875rem;
+}
+
+.fig_container img {
+  margin-left: 1rem;
+}
+
+.link_container {
+  flex: 60%;
+  margin-right: 7rem;
+}
+.nav_buttons {
+  flex: 30%;
+}
+
+/* The .link class applies to a table element,
+  and sets its position to relative, margin, width,
+  and height values, as well as its font-family, font-size,
+  and letter-spacing. It also has a top value of 23px, 
+  which shifts it downward slightly. */
+
+.flex_nav {
+  display: flex;
+  width: 79%;
+  justify-content: center;
+  margin-top: -7rem;
+  margin-left: 8rem;
+}
+.flex_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: smallcursive;
+  font-size: 1.2rem;
+
+  flex: 100%;
+}
+.flex_nav ul li {
+  list-style-type: none;
+}
+
+.flex_nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.flex_nav ul li a:hover {
+  text-decoration-line: overline;
+  text-decoration-color: rgb(41, 244, 98);
+  text-decoration-thickness: 0.173rem;
+}
+
+.sbutton {
+  text-decoration: none;
+
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  font-family: consolas;
+  letter-spacing: 0.015625rem;
+  font-weight: bolder;
+}
+
+/* css for signin button */
+#signin_button {
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51);
+}
+
+#signin_button:hover {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51), 0 0 1.5625rem rgb(249, 11, 51);
+}
+
+#signup_button {
+  background: rgb(25, 240, 83);
+  box-shadow: 0 0 0.3125rem rgb(25, 240, 83);
+}
+
+#signup_button:hover {
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74);
+}
+.togmenu {
+  display: none;
+}
+
+.flex_container {
+  display: flex;
+  width: 100%;
+  height: 7.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1.4rem;
+  background-image: linear-gradient(rgb(37, 101, 99), rgb(23, 72, 93));
+}
+
+.bar {
+  width: 75%;
+  height: 4.0625rem;
+}
+
+.sb {
+  width: 100%;
+  margin-left: 1rem;
+  display: flex;
+}
+.searchsec {
+  width: 90%;
+  height: 4rem;
+}
+.buttonsec {
+  width: 65px;
+  background-color: #36b946;
+  border: 0;
+  outline: 0;
+}
+
+.pic_icons {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cart {
+  margin-top: -30px;
+}
+
+.flex_container_products {
+  background-image: linear-gradient(315deg, #7f5a83 0%, #325772 74%);
+  padding-top: 4.69rem;
+}
+
+.maincontainer {
+  position: relative;
+  width: 20.63rem;
+  height: 32.38rem;
+  /* margin:0 1.56rem; */
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(236, 240, 247);
+  color: #333;
+  border: 0.04rem solid black;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 1, 2);
+  flex-direction: column;
+  justify-items: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: #333;
+  transform: rotateY(180deg);
+  border: 0.04rem solid black;
+  background-color: rgb(234, 248, 244);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#sec_button {
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plant_name {
+  font-family: Arial;
+  margin-top: 1.4rem;
+  color: rgb(255, 0, 136);
+  letter-spacing: 0.3rem;
+  font-size: 1.7rem;
+}
+
+.dprice {
+  position: absolute;
+  bottom: 2.06rem;
+  left: -2.1rem;
+  color: aliceblue;
+  background-color: #117e32;
+  padding: 1.5rem;
+  font-weight: 600;
+  padding-right: 3rem;
+  transform: rotate(-90deg);
+}
+
+.plantdetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our_products {
+  text-align: center;
+  margin-top: 3rem;
+  letter-spacing: 0.3rem;
+  font-family: bigbold;
+  margin-bottom: 3rem;
+}
+
+#counter {
+  position: relative;
+  left: 3rem;
+  color: azure;
+  font-size: 1.5rem;
+  background-color: #76f084;
+  width: 1.8rem;
+  text-align: center;
+  border-radius: 7rem;
+  font-family: slogan;
+  font-weight: 800;
+  top: -14px;
+}
+
+.flex_container_products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.maincontainer {
+  margin-bottom: 9rem;
+}
+
+.cart_button {
+  background: rgb(249, 11, 51);
+}
+
+.order_button {
+  background: rgb(25, 89, 240);
+}
+
+.back section button {
+  width: 82%;
+  height: 4.5rem;
+  font-family: verdana;
+  letter-spacing: 0.4rem;
+  font-size: 1.2rem;
+  margin: 1.4rem;
+  border-radius: 7rem;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 0;
+}
+
+.sbarsec {
+  width: 100%;
+}
+
+.back section button:hover {
+  background: rgb(185, 0, 241);
+  transform: translateY(-6.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  position: relative;
+  background-color: #1f1d1e;
+  width: 100%;
+  height: 28.25rem;
+  margin-top: 1.5625rem;
+}
+
+.footerwrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec1 {
+  width: 24.375rem;
+}
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24.375rem;
+}
+.sec3 {
+  width: 16.875rem;
+}
+.sec3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec1,
+.sec2,
+.sec3 {
+  margin-top: 1.25rem;
+}
+.footer_title {
+  color: white;
+  font-family: bigbold;
+  font-family: consolas;
+  letter-spacing: 0.0625rem;
+  font-size: 1.5rem;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer_para {
+  color: white;
+  font-family: smallcursive;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+.fsumbit {
+  margin-top: 0.3125rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  font-size: 1.1875rem;
+  letter-spacing: 0.1875rem;
+  font-family: courier;
+  font-weight: bolder;
+  border-radius: 0.625rem;
+  background-color: #76f084;
+}
+
+.fsumbit:hover {
+  background-color: rgb(20, 160, 134);
+  cursor: pointer;
+  transition: 0.9s;
+}
+.ulinks {
+  font-family: courier;
+  font-size: 1.375rem;
+  font-weight: bolder;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+  color: white;
+  letter-spacing: 1px;
+  width: 15rem;
+  text-align: center;
+}
+
+.sec3 li {
+  list-style-type: none;
+
+  letter-spacing: 0.25rem;
+  font-family: smallcursive;
+  margin-bottom: 3.125rem;
+}
+
+/* The .fsec3 li a style adds styling to links within list items
+      within the third section of the footer element. */
+.sec3 li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#feedback {
+  resize: none;
+  background-color: #2f2e2e;
+  color: aliceblue;
+  height: 15rem;
+  width: 25rem;
+}
+
+/* The .fsec3 ul li a:hover style adds a hover effect to links within list
+      items within the third section of the footer element. */
+.sec3 ul li a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  transition: 1.5s;
+  text-decoration-thickness: 0.1875rem;
+}
+
+.logo {
+  width: 11rem;
+  height: 10rem;
+  margin-top: -1.5rem;
+}
+
+.m1 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m2 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m3 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m4 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m5 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m6 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m7 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m8 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m9 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m10 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m11 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+.m12 {
+  width: 275px;
+  height: 260px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+
+  .flex_container {
+    margin-top: 2.4rem;
+  }
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .footerwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+
+  .footer_para {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 15rem;
+    width: 19rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 8.75rem;
+    height: 2.8rem;
+    font-size: 1.1875rem;
+  }
+  .ulinks {
+    font-size: 1.1rem;
+    width: 98%;
+  }
+  .sec3 li {
+    font-size: 1.1rem;
+  }
+
+  .cato {
+    display: none;
+  }
+  select {
+    display: none;
+  }
+
+  .srcicon {
+    width: 2rem;
+  }
+
+  .cart {
+    width: 2.5rem;
+  }
+  #counter {
+    left: 0.5rem;
+    font-size: 1.2rem;
+    width: 1.5rem;
+    top: -1.3rem;
+  }
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1.5rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    width: 204px;
+  }
+
+  .prof {
+    width: 2.5rem;
+  }
+  .front {
+    margin: 0 -2px;
+  }
+  .our_products {
+    text-align: center;
+    margin-top: -4.5rem;
+    letter-spacing: 0.3rem;
+    font-family: bigbold;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: white;
+    position: absolute;
+    margin-left: 2rem;
+  }
+  .flex_container {
+    background-image: linear-gradient(rgb(20 33 33), rgb(1 38 63));
+  }
+  .flex_container_products {
+    background-image: linear-gradient(315deg, #7f5a83 0%, #1b3a50 74%);
+  }
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+  .flex_nav ul li a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+  }
+
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+  .sbutton {
+    font-size: 1.25rem;
+    border-radius: 2.25rem;
+  }
+
+  .rep1 {
+    display: none;
+  }
+  .btnimg {
+    width: 2.5rem;
+  }
+  .bar {
+    display: none;
+  }
+  .pic_icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 90%;
+  }
+  .cart_ani {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 494px) and (max-width: 600px) {
+  html {
+    font-size: 62%;
+  }
+
+  .flex_container {
+    margin-top: 2.4rem;
+  }
+
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    width: 169px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  html {
+    font-size: 70%;
+  }
+
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1.5rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .footerwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+
+  .footer_para {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 15rem;
+    width: 19rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 8.75rem;
+    height: 2.8rem;
+    font-size: 1.1875rem;
+  }
+  .ulinks {
+    font-size: 1.1rem;
+    width: 98%;
+  }
+  .sec3 li {
+    font-size: 1.1rem;
+  }
+  #counter {
+    left: 0.6rem;
+    font-size: 1.5rem;
+    top: -24px;
+  }
+  .searchsec {
+    width: 90%;
+    height: 3rem;
+  }
+  .btnimg {
+    width: 1.5rem;
+  }
+
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    width: 190px;
+  }
+  .buttonsec {
+    width: 45px;
+  }
+  .prof {
+    width: 3.5rem;
+    margin-top: -1rem;
+  }
+  .cart {
+    width: 3.5rem;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+
+  .flex_nav ul li a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+  }
+
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+  .flex_container {
+    margin-top: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 692px) and (max-width: 992px) {
+  .front {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    margin-left: 6px;
+  }
+
+  .flex_container {
+    margin-top: 2.4rem;
+  }
+
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    width: 168px;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+  .flex_nav ul li a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+  }
+
+  .sbutton {
+    font-size: 1.25rem;
+    border-radius: 2.25rem;
+  }
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1135px) {
+  html {
+    font-size: 80%;
+  }
+
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    width: 215px;
+  }
+
+  .front {
+    margin-left: -15px;
+  }
+  .flex_container_products {
+    width: 93%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1136px) and (max-width: 1400px) {
+  .front {
+    margin-left: 2px;
+    width: 89%;
+  }
+
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5,
+  .m6,
+  .m7,
+  .m8,
+  .m9,
+  .m10,
+  .m11,
+  .m12 {
+    width: 290px;
+  }
+  .flex_container_products {
+    width: 93%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1401px) {
+  .front {
+    left: 7px;
+    width: 85%;
+  }
+}

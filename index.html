@@ -1,0 +1,313 @@
+<!DOCTYPE html> <!--  TELLING BROWSER WE ARE USING HTML 5 -->
+
+<html lang="en">
+
+<head>
+
+  <!-- metatags -->
+  <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+  <meta name="description" content="about home page of bonsai hub website">
+
+
+  <!-- A <meta> tag with a "name" attribute set to "keyword" and a "content" attribute that contains a list of keywords related to the webpage. -->
+  <meta name="keyword" content="bonsai, bonai website, bonsai hub, buy bonsai plant">
+
+
+  <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+  <meta name="author" content="miraj deep bhandari, rijan paudel, jenish katwal , umang pradhananga, gazal bishowkarma">
+
+
+  <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- linking css files to home page -->
+
+  <link rel="stylesheet" href="css/home.css">
+
+  <!-- <link rel="stylesheet" href="css/nav.css"> -->
+
+  <title>HOME</title>
+
+</head>
+<style>
+  #current {
+
+    text-decoration: overline;
+    text-decoration-color: rgb(250, 0, 0);
+    text-decoration-thickness: 2px;
+  }
+</style>
+
+<body>
+  <!-- header section starts form here -->
+
+  <header id="hed">
+    <nav>
+      <img src="images/logo.png" style="width:11rem; height:10rem; margin-top: -1.5rem;" class="logo">
+
+      <div class="flex_nav">
+
+        <ul id="resp_nav">
+          <img src="icons/close1.png" style="position: absolute; width: 3rem;" class="togmenu menuclose"
+            onclick="closever()">
+          <li><a href="index.html" style=" text-decoration: overline;text-decoration-color: rgb(250, 0, 0);
+          text-decoration-thickness: 2px;">Home</a></li>
+          <li><a href="pages/blog.html ">Blog</a></li>
+          <li><a href="pages/products.html">Products</a></li>
+          <li><a href="pages/research.html">Research</a></li>
+          <li><a href="pages/about.html">About us</a></li>
+          <a href="pages/signup.html" class="sbutton" id="signup_button">Sign up</a>
+          <a href="pages/login.html" class="sbutton" id="signin_button">Sign in</a>
+        </ul>
+
+      </div>
+      <figure class="ham">
+
+        <img src="icons/menu.png" style="width: 4rem;" class="togmenu closeit" onclick="openver()">
+        <!-- <img src="icons/close1.png" style="position: absolute; width: 3rem;" class="togmenu"> -->
+
+      </figure>
+    </nav>
+
+    <!-- div having  background -->
+    <div class="contain">
+
+      <section>
+
+        <!-- website short slogan -->
+        <h1> <span>F</span>resh plants <h1>
+            <h3>Healthy & Beautiful</h3>
+            <P><i>Apply Our Coupon Code And</i><br> <i>Get 25% Discount Instant</i></P>
+
+            <!-- code for get started button -->
+            <a href="pages/products.html" class="getstart_button">GET STARTED</a>
+
+      </section>
+
+    </div>
+
+  </header>
+
+
+
+  <div class="info">
+
+
+    <!-- sologan -->
+    <h1 id="slogan">Create a Greener Atmosphere With Our Products</h1>
+
+
+    <!-- main div having all the information of all webpages -->
+
+
+    <div class="description_box">
+
+
+      <!-- blog page -->
+
+      <section class="des" id="des1">
+
+        <!-- blog logo  -->
+
+        <figure>
+
+          <img src="icons/blog.png" class="resp">
+
+        </figure>
+
+        <h1 style="margin-top: 0.9375rem;">BLOG</h1>
+        <!-- inline css -->
+
+        <!-- blog page description -->
+
+        <p>Blog page contains the information how technology impact our daily lives
+          and business.Technology is a scientific term which is achieved , acquire and improved by the humans
+          to make our daily life easier.<br> <a href="pages/blog.html">GO TO BLOG</a>
+        </p>
+
+      </section>
+
+      <!-- Products -->
+
+      <section class="des" id="des2">
+
+
+
+        <!-- products logo -->
+        <figure>
+
+          <img src="icons/products.png" class="resp">
+
+        </figure>
+
+        <h1 style="margin-top: 0.9375rem;">PRODUCTS</h1>
+
+        <!-- products page description -->
+
+        <p>Products page contains fresh, healthy and beautiful bonsai plants. We have all
+          types of bonsai plants available.You can order a plant here
+          according to your mindset and design and we make You available in time.<br>lets place a order.
+          <br> <a href="pages/products.html">GO TO PRODUCTS</a>
+        </p>
+
+      </section>
+
+
+      <!-- research -->
+
+      <section class="des" id="des3">
+
+        <!-- research logo -->
+
+        <figure>
+
+          <img src="icons/research.png" class="resp">
+
+        </figure>
+
+
+
+        <h1 style="margin-top: 0.9375rem;">RESEARCH</h1>
+
+        <!-- research page description -->
+
+        <p>Research page contains all the components used by us for this website which make people easy
+          for investigation about our various products as well as different
+          technologies .This page also have various
+          pages for refereneces of the website.
+          <br> <a href="pages/research.html">GO TO RESEARCH</a>
+        </p>
+
+
+      </section>
+
+
+      <!-- about us page -->
+
+      <section class="des" id="des4">
+
+        <!-- about us logo -->
+        <figure>
+
+          <img src="icons/about_us.png" class="resp">
+
+        </figure>
+
+        <h1 style="margin-top: 0.9375rem;">ABOUT US</h1>
+
+        <!-- about_us page description -->
+
+        <p>About us page contains all detailed information<br> of the owners of the website containing their
+          technical and soft skills, educational background,<br> email address,certificates and many more
+          things related to the website and owners.
+          <br> <a href="pages/about.html">GO TO ABOUT US</a>
+        </p>
+
+
+      </section>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- footer section starts from here -->
+
+
+  <!-- This footer element contains the footer content for the page -->
+  <footer>
+    <div class="footerwrapper">
+
+      <section class="sec1">
+        <!-- This h1 element displays the title for the section -->
+        <h1 class="footer_title">
+
+          Why to choose BonsaiHub ?</h1>
+
+        <!-- This p element displays the paragraph of text for the section -->
+        <p class="footer_para">Bonsai hub is the best place for the bonsai plants.
+          We grow the fresh and healthy bonsai plants in good Atmosphere
+          at Bhaktapur Nursery. You can place a order here according you your mind set
+          and plant design. We will deliver fresh, beautiful and healthy bonsai at
+          your home. you can also contact us on 9800909066 for further inquiry about
+          our business.
+        </p>
+      </section>
+
+      <section class="sec2">
+
+        <!-- This h1 element displays the title for the section -->
+        <h1 class="footer_title" style=" padding-left: 4.8rem;
+        padding-right: 4.8rem;">
+          ANY INQUIRIES ?</h1>
+
+
+        <!-- This textarea element allows the user to input their feedback -->
+        <form name="inquiry">
+          <textarea id="feedback" name="feedback"></textarea>
+        </form>
+        <!-- This button element submits the feedback -->
+        <button class="fsumbit" onclick="fback()">SUBMIT</button>
+
+      </section>
+
+      <section class="sec3">
+
+        <ul>
+
+          <!-- This li element displays the title for the list of links -->
+          <p class="ulinks">
+            USEFUL LINKS</p>
+
+
+          <!-- These li elements contain the links for the list -->
+          <li><a href="pages/products.html">PRODUCTS</a></li>
+
+          <li><a href="pages/blog.html">BLOG</a></li>
+
+          <li><a href="pages/research.html">RESEARCH</a></li>
+
+          <li><a href="pages/about.html">ABOUT US</a></li>
+
+
+        </ul>
+      </section>
+    </div>
+
+  </footer>
+
+</body>
+<script>
+
+  function fback() {
+
+
+    var fb = document.forms["inquiry"]["feedback"].value;
+    if (fb == "") {
+      alert('unable to send empty text');
+    }
+    else {
+
+      alert('we have sucessfully received your inquiry we will reply you in your given mail');
+    }
+
+
+  }
+
+  function openver() {
+
+    document.getElementById('resp_nav').style.right = '0%';
+
+  }
+  function closever() {
+
+    document.getElementById('resp_nav').style.right = '100%';
+
+  }
+
+</script>
+
+</html>

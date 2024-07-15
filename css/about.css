@@ -1,0 +1,1157 @@
+html {
+  font-size: 100%;
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: smallcursive;
+  src: url("../fonts/smallcursive.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: bigbold;
+  src: url("../fonts/bigbold.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: slogan;
+  src: url("../fonts/slogan.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* The nav element has a position of relative, which means that any 
+  absolutely positioned elements within it will be positioned relative 
+  to the nav element itself, rather than the entire page. */
+
+.logo {
+  width: 11rem;
+  height: 10rem;
+  margin-top: -1.5rem;
+}
+
+.togmenu {
+  display: none;
+}
+
+/* The #hed element has a display of block, a height of 100vh, and a width of 
+  100%, which makes it take up the full height and width of the viewport. 
+  It also has a position of relative and a top value of -0.4875rem, 
+  which shifts it upward slightly.*/
+
+#hed {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: -0.4875rem;
+}
+
+.fig_container img {
+  margin-left: 1rem;
+}
+
+.link_container {
+  flex: 60%;
+  margin-right: 7rem;
+}
+.nav_buttons {
+  flex: 30%;
+}
+
+/* The .link class applies to a table element,
+  and sets its position to relative, margin, width,
+  and height values, as well as its font-family, font-size,
+  and letter-spacing. It also has a top value of 23px, 
+  which shifts it downward slightly. */
+
+.flex_nav {
+  display: flex;
+  width: 79%;
+  justify-content: center;
+  margin-top: -7rem;
+  margin-left: 8rem;
+}
+.flex_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: smallcursive;
+  font-size: 1.2rem;
+
+  flex: 100%;
+}
+.flex_nav ul li {
+  list-style-type: none;
+}
+
+.flex_nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.flex_nav ul li a:hover {
+  text-decoration-line: overline;
+  text-decoration-color: rgb(41, 244, 98);
+  text-decoration-thickness: 0.173rem;
+}
+
+.sbutton {
+  text-decoration: none;
+
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  font-family: consolas;
+  letter-spacing: 0.015625rem;
+  font-weight: bolder;
+}
+
+/* css for signin button */
+#signin_button {
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51);
+}
+
+#signin_button:hover {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51), 0 0 1.5625rem rgb(249, 11, 51);
+}
+
+#signup_button {
+  background: rgb(25, 240, 83);
+  box-shadow: 0 0 0.3125rem rgb(25, 240, 83);
+}
+
+#signup_button:hover {
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74);
+}
+.pim {
+  width: 13.75rem;
+  height: 14.375rem;
+  margin-top: 0.9375rem;
+  border-radius: 18.125rem;
+  border: 0.25rem solid rgb(36, 207, 139);
+}
+
+#about {
+  margin-top: 1.575rem;
+  margin-bottom: 0.9375rem;
+  background-color: #f4f4f4;
+  padding: 1.875rem;
+  text-align: center;
+  border: 0.0625rem solid black;
+}
+.wraper {
+  position: relative;
+  top: 0.6875rem;
+  background-image: linear-gradient(rgb(21, 15, 39), rgb(31, 18, 72));
+}
+
+#team_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#team_wrapper1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+#team_wrapper section,
+#team_wrapper1 section {
+  width: 25rem;
+  height: 25rem;
+  background-color: aliceblue;
+  border: 0.0625rem solid black;
+  margin: 3.125rem;
+  border-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 3.125rem;
+  overflow: hidden;
+  border: 0.000625rem solid black;
+}
+
+#ourteam {
+  padding: 0.5rem;
+  font-family: slogan;
+  background-color: rgb(47, 15, 73);
+  color: aliceblue;
+}
+
+.profile img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+#team_wrapper section h1,
+#team_wrapper1 section h1 {
+  text-align: center;
+  letter-spacing: 0.0625rem;
+  font-family: slogan;
+  font-size: 1.25rem;
+}
+
+#team_wrapper section p,
+#team_wrapper1 section p {
+  text-align: center;
+  letter-spacing: 0.0625rem;
+  font-family: smallcursive;
+  font-size: 1.25rem;
+  padding: 0.1875rem;
+  font-weight: 500;
+}
+
+#team_wrapper section a,
+#team_wrapper1 section a {
+  text-decoration: none;
+  padding: 0.9375rem;
+  letter-spacing: 0.125rem;
+  background-color: rgb(33, 67, 96);
+  color: aliceblue;
+  border-radius: 0.9375rem;
+  top: 0.5rem;
+}
+
+#team_wrapper section a:hover,
+#team_wrapper1 section a:hover {
+  transition: 0.9s;
+  background-color: black;
+}
+
+.cv {
+  position: absolute;
+  top: 5.875rem;
+  border: 0.0625rem solid black;
+  width: 99.9%;
+  height: 81rem;
+  background-color: rgb(53, 44, 105);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.cvtemplete {
+  width: 95%;
+  height: 95%;
+  display: flex;
+}
+
+.leftsec {
+  width: 38.59%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1e1a54;
+  border-top-left-radius: 20rem;
+}
+.rightsec {
+  width: 61.41%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fdfdfd;
+  border-bottom-right-radius: 25rem;
+}
+.ulbox {
+  width: 100%;
+}
+.ulbox ul {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5rem;
+}
+
+.ulbox ul li {
+  width: 100%;
+}
+.aboutinfo {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "smallcursive";
+  padding: 0.3125rem;
+}
+
+.barr {
+  width: 100%;
+  color: #ffffff;
+}
+.lang {
+  letter-spacing: 0.12rem;
+  font-weight: 595;
+  color: aliceblue;
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.langsec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.9375rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.3125rem;
+}
+.progressbar,
+.progressbar1,
+.progressbar2,
+.progressbar3 {
+  text-align: left;
+  font-size: 1.063rem;
+  color: aliceblue;
+  background-color: rgb(162 149 189);
+  width: 100%;
+  font-family: "Franklin Gothic Medium";
+  text-align: center;
+  letter-spacing: 0.125rem;
+}
+
+.progressbar P {
+  width: 99%;
+  background-color: #171333;
+}
+.progressbar1 P {
+  width: 90%;
+  background-color: #171333;
+}
+.progressbar2 P {
+  width: 85%;
+  background-color: #171333;
+}
+.progressbar3 P {
+  width: 95%;
+  background-color: #171333;
+}
+.proghead {
+  color: rgb(233, 233, 244);
+  letter-spacing: 0.125rem;
+  font-family: slogan;
+  font-weight: bolder;
+  margin: 0.625rem 0;
+}
+
+.name {
+  font-size: 2.5rem;
+  letter-spacing: 0.0625rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cer {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.otherinf {
+  font-size: 1.125rem;
+  font-family: ui-serif;
+}
+
+.righthead {
+  color: #0a961a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  border-bottom: 4px solid rgb(13, 166, 13);
+  padding-bottom: 0.8rem;
+}
+
+.tablecv,
+.tablecv tr,
+.tablecv td,
+.tablecv th {
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tablecv {
+  height: 16rem;
+  width: 100%;
+}
+.righthead {
+  margin-top: 2.375rem;
+}
+.tablecv th {
+  font-size: 1.125rem;
+  letter-spacing: 0.125rem;
+  font-family: Verdana, sans-serif;
+}
+
+.tablecv td {
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  font-weight: 200;
+}
+
+.close_button {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 3.75rem;
+  top: 3.125rem;
+  border-radius: 2.5rem;
+  border: none;
+  background-color: rgb(12, 236, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close_button img {
+  width: 2.8125rem;
+  height: 2.625rem;
+}
+
+.profile_h1 {
+  letter-spacing: 0.1875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 0.3125rem solid aliceblue;
+}
+
+.language_h2 {
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.125rem;
+  border-bottom: 0.3125rem solid aliceblue;
+  margin-bottom: 0.625rem;
+}
+
+/* css for the feedback outer container */
+.feedback_container {
+  position: absolute;
+  background-color: #272648;
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+  top: 0.0625rem;
+  box-sizing: border-box;
+}
+.form_title {
+  color: #ff0000;
+  position: relative;
+  top: -0.875rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+  font-family: bigbold;
+}
+
+.form_wrapper {
+  background-color: rgb(29, 32, 74);
+  width: 25rem;
+  padding: 1.5625rem;
+  margin: 1.25rem;
+  box-shadow: 0 0 0.9375rem rgb(8, 3, 19), 0 0 0.125rem rgb(8, 3, 19);
+  position: relative;
+}
+
+.fbwrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_wrapper input {
+  width: 97%;
+  height: 2rem;
+  padding: 0.5rem;
+  font-family: verdana;
+  font-size: 1rem;
+}
+
+/* The .form_wrapper label, .form_wrapper span selectors target label and span elements that are inside an element with the class "form_wrapper" */
+.form_wrapper label,
+.form_wrapper span {
+  /* Set the color of the label and span elements to be alice blue */
+  color: aliceblue;
+
+  /* Set the font family of the label and span elements to be Verdana */
+  font-family: verdana;
+}
+
+/* feed back button  */
+.fback {
+  width: 300px;
+  height: 50px;
+  letter-spacing: 0.313rem;
+  font-family: sans-serif;
+  font-weight: bolder;
+  border-radius: 50px;
+  background-color: #000000;
+  color: aliceblue;
+  border: 0;
+  font-size: 0.875rem;
+}
+/* hover for feedback buttton */
+.fback:hover {
+  background-color: #047b04;
+}
+
+footer {
+  position: relative;
+  background-color: #1f1d1e;
+  width: 100%;
+  height: 28.25rem;
+  margin-top: 0.5625rem;
+}
+
+.footerwrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec1 {
+  width: 24.375rem;
+}
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24.375rem;
+}
+.sec3 {
+  width: 16.875rem;
+}
+.sec3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec1,
+.sec2,
+.sec3 {
+  margin-top: 1.25rem;
+}
+.footer_title {
+  color: white;
+  font-family: bigbold;
+  font-family: consolas;
+  letter-spacing: 0.0625rem;
+  font-size: 1.5rem;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer_para {
+  color: white;
+  font-family: smallcursive;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+.fsumbit {
+  margin-top: 0.3125rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  font-size: 1.1875rem;
+  letter-spacing: 0.1875rem;
+  font-family: courier;
+  font-weight: bolder;
+  border-radius: 0.625rem;
+  background-color: #76f084;
+}
+
+.fsumbit:hover {
+  background-color: rgb(20, 160, 134);
+  cursor: pointer;
+  transition: 0.9s;
+}
+.ulinks {
+  font-family: courier;
+  font-size: 1.375rem;
+  font-weight: bolder;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+  color: white;
+  letter-spacing: 1px;
+  width: 15rem;
+  text-align: center;
+}
+
+.sec3 li {
+  list-style-type: none;
+
+  letter-spacing: 0.25rem;
+  font-family: smallcursive;
+  margin-bottom: 3.125rem;
+}
+
+/* The .fsec3 li a style adds styling to links within list items
+      within the third section of the footer element. */
+.sec3 li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#feedback {
+  resize: none;
+  background-color: #2f2e2e;
+  color: aliceblue;
+  height: 15rem;
+  width: 25rem;
+}
+
+/* The .fsec3 ul li a:hover style adds a hover effect to links within list
+      items within the third section of the footer element. */
+.sec3 ul li a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  transition: 1.5s;
+  text-decoration-thickness: 0.1875rem;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+
+  .footerwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+
+  .footer_para {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 15rem;
+    width: 19rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 8.75rem;
+    height: 2.8rem;
+    font-size: 1.1875rem;
+  }
+  .ulinks {
+    font-size: 1.1rem;
+    width: 98%;
+  }
+  .sec3 li {
+    font-size: 1.1rem;
+  }
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .flex_nav ul li a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+  #team_wrapper {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  #team_wrapper1 {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #team_wrapper section,
+  #team_wrapper1 section {
+    width: 96%;
+  }
+
+  .fbwrap {
+    margin-top: 2rem;
+  }
+  .fback {
+    width: 210px;
+    height: 42px;
+  }
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1.5rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+  .flex_nav ul li a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+  }
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  .cv {
+    margin-top: -2rem;
+    height: 83rem;
+  }
+  .pim {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-top: -5.0625rem;
+  }
+
+  .leftsec {
+    border-top-left-radius: 0rem;
+  }
+  .aboutinfo {
+    font-size: 1rem;
+    padding: 0.4rem;
+
+    margin-top: -6rem;
+  }
+
+  .profile_h1,
+  .language_h2 {
+    font-size: 0.8rem;
+    padding: 0 0.6rem;
+    padding-bottom: 0.325rem;
+    border-bottom: 0.2125rem solid aliceblue;
+  }
+  .profile_h1 {
+    margin-top: -6rem;
+  }
+  .language_h2 {
+    margin-top: -4rem;
+    margin-bottom: 1.625rem;
+  }
+
+  .langsec {
+    margin-top: -1rem;
+  }
+
+  .lang {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .proghead {
+    font-size: 0.8rem;
+  }
+  .progressbar P,
+  .progressbar1 P,
+  .progressbar2 P,
+  .progressbar3 P {
+    font-size: 0.9rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .righthead {
+    font-size: 1.1rem;
+
+    border-bottom: 2px solid rgb(13, 166, 13);
+    padding-bottom: 0.3rem;
+  }
+  .cer {
+    font-size: 1.1rem;
+  }
+  .rightsec {
+    border-bottom-right-radius: 0rem;
+  }
+
+  .otherinf {
+    font-size: 0.9rem;
+  }
+  .tablecv th {
+    font-size: 0.99rem;
+  }
+  .tablecv td {
+    font-size: 1rem;
+  }
+
+  .tablecv {
+    height: 16rem;
+    width: 99%;
+    margin-top: 2rem;
+  }
+
+  .proghead {
+    margin: 1.2rem 0;
+  }
+
+  .barr {
+    margin-bottom: -4rem;
+  }
+
+  .close_button {
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 1.2rem;
+    top: 2.325rem;
+  }
+
+  .close_button img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .ulbox ul {
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
+
+  #about {
+    margin-top: 2.575rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1001px) {
+  html {
+    font-size: 80%;
+  }
+  #team_wrapper,
+  #team_wrapper1 {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #team_wrapper section,
+  #team_wrapper1 section {
+    width: 30rem;
+    height: 27rem;
+  }
+
+  .footerwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+
+  .footer_para {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 15rem;
+    width: 19rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 8.75rem;
+    height: 2.8rem;
+    font-size: 1.1875rem;
+  }
+  .ulinks {
+    font-size: 1.1rem;
+    width: 98%;
+  }
+  .sec3 li {
+    font-size: 1.1rem;
+  }
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .flex_nav ul li a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+  .flex_nav ul li a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+  }
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  .fback {
+    width: 254px;
+    height: 44px;
+  }
+
+  .rightsec {
+    border-bottom-right-radius: 15rem;
+  }
+
+  .leftsec {
+    border-top-left-radius: 12rem;
+  }
+
+  .pim {
+    width: 10.75rem;
+    height: 10.375rem;
+    margin-top: -2.0625rem;
+  }
+
+  .aboutinfo {
+    font-size: 1.3rem;
+    margin-top: -5rem;
+  }
+
+  .profile_h1 {
+    letter-spacing: 0.1875rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-size: 1.3rem;
+    border-bottom: 0.3rem solid aliceblue;
+    margin-top: -4rem;
+  }
+
+  .lang {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .language_h2 {
+    border-bottom: 0.3rem solid aliceblue;
+    margin-bottom: 0.625rem;
+    font-size: 1.3rem;
+  }
+
+  .proghead {
+    margin: 1.2rem 0;
+    margin: 0.625rem 0;
+    font-size: 0.9rem;
+  }
+  .cv {
+    top: 3.875rem;
+
+    height: 95rem;
+  }
+
+  .righthead {
+    font-size: 1.5rem;
+    border-bottom: 3px solid rgb(13, 166, 13);
+    padding-bottom: 0.3rem;
+  }
+
+  .ulbox ul {
+    box-sizing: border-box;
+    padding: 2rem;
+  }
+
+  .langsec {
+    margin-top: -2rem;
+  }
+  .barr {
+    margin-bottom: -4rem;
+  }
+  .proghead {
+    margin: 1.625rem 0;
+    font-size: 0.9rem;
+  }
+  .close_button {
+    right: 2rem;
+    top: 2.6rem;
+  }
+  .oi {
+    margin-top: -3rem;
+  }
+  .ulbox {
+    margin-top: -3rem;
+  }
+
+  #about {
+    margin-top: 2.575rem;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1351px) {
+  html {
+    font-size: 85%;
+  }
+
+  .cv {
+    height: 91rem;
+  }
+
+  .pim {
+    width: 11.75rem;
+    height: 11.75rem;
+  }
+  .righthead {
+    font-size: 2rem;
+  }
+  .leftsec {
+    border-top-left-radius: 15rem;
+  }
+  .rightsec {
+    border-bottom-right-radius: 20rem;
+  }
+  .ulbox {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  #team_wrapper section,
+  #team_wrapper1 section {
+    height: 28rem;
+  }
+  .oi {
+    margin-top: -2rem;
+  }
+  .close_button {
+    right: 2.2rem;
+    top: 3rem;
+  }
+}

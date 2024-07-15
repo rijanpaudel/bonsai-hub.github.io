@@ -1,0 +1,381 @@
+/* 
+  @font-face rule for smallcursive font 
+  This rule defines the smallcursive font family and points to the smallcursive.ttf file 
+  for the font's source
+*/
+@font-face {
+  font-family: smallcursive;
+  src: url("../fonts/smallcursive.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: bigbold;
+  src: url("../fonts/bigbold.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: slogan;
+  src: url("../fonts/slogan.ttf");
+}
+
+/* The html element has a font-size of 100%, which sets the 
+  default font size for the page to be equal 
+  to the default size of the user's web browser */
+
+/* The * rule applies to all elements on the page, setting 
+  the default padding and margin to 0 for all elements. */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* The nav element has a position of relative, which means that any 
+  absolutely positioned elements within it will be positioned relative 
+  to the nav element itself, rather than the entire page. */
+
+nav {
+  position: relative;
+}
+
+/* The #hed element has a display of block, a height of 100vh, and a width of 
+  100%, which makes it take up the full height and width of the viewport. 
+  It also has a position of relative and a top value of -0.4875rem, 
+  which shifts it upward slightly.*/
+
+.fig_container img {
+  margin-left: 1rem;
+}
+
+.link_container {
+  flex: 60%;
+  margin-right: 7rem;
+}
+.nav_buttons {
+  flex: 30%;
+}
+
+/* The .link class applies to a table element,
+  and sets its position to relative, margin, width,
+  and height values, as well as its font-family, font-size,
+  and letter-spacing. It also has a top value of 23px, 
+  which shifts it downward slightly. */
+nav {
+  width: 100%;
+}
+
+.flex_nav {
+  display: flex;
+  width: 79%;
+  justify-content: center;
+  margin-top: -7rem;
+  margin-left: 8rem;
+}
+.flex_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: smallcursive;
+  font-size: 1.2rem;
+
+  flex: 100%;
+}
+.flex_nav ul li {
+  list-style-type: none;
+}
+.togmenu {
+  display: none;
+}
+
+.flex_nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.flex_nav ul li a:hover {
+  text-decoration-line: overline;
+  text-decoration-color: rgb(41, 244, 98);
+  text-decoration-thickness: 0.173rem;
+}
+
+.sbutton {
+  text-decoration: none;
+
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  font-family: consolas;
+  letter-spacing: 0.015625rem;
+  font-weight: bolder;
+}
+
+/* css for signin button */
+#signin_button {
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51);
+}
+
+#signin_button:hover {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51), 0 0 1.5625rem rgb(249, 11, 51);
+}
+
+#signup_button {
+  background: rgb(25, 240, 83);
+  box-shadow: 0 0 0.3125rem rgb(25, 240, 83);
+}
+
+#signup_button:hover {
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74);
+}
+.logo {
+  width: 11rem;
+  height: 10rem;
+  margin-top: -1.5rem;
+}
+
+/* 
+  Style for body element 
+  This style sets the font family to poppins, the background color to a dark blue, 
+  and sets the line height to 1 
+*/
+body {
+  font-family: "poppins";
+  background-color: rgb(0, 43, 63);
+  line-height: 1;
+}
+
+/* 
+  Style for a elements 
+  This style removes the default text decoration for a elements 
+*/
+a {
+  text-decoration: none;
+}
+
+/* 
+  Style for #container element 
+  This style positions the element 100px from the top of the screen, 
+  centers it horizontally, sets the max width to 430px, 
+  and adds padding of 20px on all sides 
+*/
+#container {
+  margin: 30px auto;
+  position: relative;
+  top: 100px;
+  max-width: 430px;
+  padding: 20px;
+}
+
+/* 
+  Style for #container_signup element 
+  This style positions the element 9px from the top of the screen, 
+  centers it horizontally, sets the max width to 430px, 
+  adds padding of 20px on all sides, 
+  and sets the height to 632px 
+*/
+#container_signup {
+  margin: 80px auto;
+  position: relative;
+  top: -9px;
+  max-width: 430px;
+  padding: 20px;
+  height: 632px;
+}
+
+/* 
+  Style for .form-wrap element 
+  This style sets the background color to white, adds padding of 15px 25px, 
+  sets the text color to a dark grey, adds a top border of 4px with a color of #49c1a2, 
+  and adds a border radius of 5px 
+*/
+.form-wrap {
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #333;
+  border-top: 4px solid #49c1a2;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+  Style for h1 and p elements within .form-wrap element 
+  This style centers the text within h1 and p elements 
+*/
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+
+/* 
+  Style for .form-group elements within .form-wrap element 
+  This style adds a top margin of 15px to .form-group elements 
+*/
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+/* 
+  Style for label elements within .form-group elements within .form-wrap element 
+  This style displays label elements as block elements and sets the text color to a light grey 
+*/
+.form-wrap .form-group label {
+  display: block;
+  color: #666;
+}
+
+/* 
+  Style for input elements within .form-group elements within .form-wrap element 
+  This style sets the width to 100%, adds padding of 10px, 
+  adds a 1px solid border of color #ddd, and adds a border radius of 5px 
+*/
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+/* 
+  Style for button elements within .form-wrap element 
+  This style displays the button as a block element, sets the width to 100%, 
+  adds padding of 10px, adds a top margin of 20px, 
+  sets the background color to #49c1a2 and the text color to white, 
+  sets the cursor to a pointer, adds a 1px solid border of color #49c1a2, 
+  sets the font family to poppins, sets the font size to 15px, 
+  and adds a transition duration of 1s 
+*/
+.form-wrap button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #49c1a2;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #49c1a2;
+  font-family: "poppins";
+  font-size: 15px;
+  transition: 1s;
+}
+
+/* 
+  Style for button elements within .form-wrap element when hovered over 
+  This style sets the background color to #37a08e and adds a transition duration of 1s 
+*/
+.form-wrap button:hover {
+  background-color: #37a08e;
+  transition: 1s;
+}
+
+/* 
+  Style for .form-wrap .bottom-text element 
+  This style sets the font size to 13px and adds a top margin of 20px 
+*/
+.form-wrap .bottom-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* 
+  Style for footer element 
+  This style centers the text within the footer element and adds a top margin of 10px 
+*/
+footer {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+/* 
+  Style for a elements within footer element 
+  This style sets the text color to #49c1a2 
+*/
+footer a {
+  color: #49c1a2;
+}
+
+/* 
+  Style for #box element 
+  This style sets the width to 100% and the height to 40px 
+*/
+#box {
+  width: 100%;
+  height: 40px;
+}
+
+@media only screen and (max-width: 1001px) {
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1.5rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  .flex_nav ul li a {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+}

@@ -1,0 +1,368 @@
+@font-face {
+  font-family: smallcursive;
+  src: url("../fonts/smallcursive.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: bigbold;
+  src: url("../fonts/bigbold.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: slogan;
+  src: url("../fonts/slogan.ttf");
+}
+
+/* The html element has a font-size of 100%, which sets the 
+  default font size for the page to be equal 
+  to the default size of the user's web browser */
+
+/* The * rule applies to all elements on the page, setting 
+  the default padding and margin to 0 for all elements. */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* The nav element has a position of relative, which means that any 
+  absolutely positioned elements within it will be positioned relative 
+  to the nav element itself, rather than the entire page. */
+
+nav {
+  position: relative;
+}
+
+/* The #hed element has a display of block, a height of 100vh, and a width of 
+  100%, which makes it take up the full height and width of the viewport. 
+  It also has a position of relative and a top value of -0.4875rem, 
+  which shifts it upward slightly.*/
+
+.logo {
+  width: 11rem;
+  height: 10rem;
+  margin-top: -1.5rem;
+}
+
+#hed {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: -0.4875rem;
+}
+
+.fig_container img {
+  margin-left: 1rem;
+}
+
+.link_container {
+  flex: 60%;
+  margin-right: 7rem;
+}
+.nav_buttons {
+  flex: 30%;
+}
+
+/* The .link class applies to a table element,
+  and sets its position to relative, margin, width,
+  and height values, as well as its font-family, font-size,
+  and letter-spacing. It also has a top value of 23px, 
+  which shifts it downward slightly. */
+nav {
+  width: 100%;
+}
+
+.flex_nav {
+  display: flex;
+  width: 79%;
+  justify-content: center;
+  margin-top: -7rem;
+  margin-left: 8rem;
+}
+.flex_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: smallcursive;
+  font-size: 1.2rem;
+
+  flex: 100%;
+}
+.flex_nav ul li {
+  list-style-type: none;
+}
+.togmenu {
+  display: none;
+}
+
+.flex_nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.flex_nav ul li a:hover {
+  text-decoration-line: overline;
+  text-decoration-color: rgb(41, 244, 98);
+  text-decoration-thickness: 0.173rem;
+}
+
+.sbutton {
+  text-decoration: none;
+
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  font-family: consolas;
+  letter-spacing: 0.015625rem;
+  font-weight: bolder;
+}
+
+/* css for signin button */
+#signin_button {
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51);
+}
+
+#signin_button:hover {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51), 0 0 1.5625rem rgb(249, 11, 51);
+}
+
+#signup_button {
+  background: rgb(25, 240, 83);
+  box-shadow: 0 0 0.3125rem rgb(25, 240, 83);
+}
+
+#signup_button:hover {
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74);
+}
+
+.head_intro {
+  margin-top: 25px;
+  background-color: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid black;
+  border-right: none;
+  margin-bottom: 20px;
+}
+
+/* Adds a margin of 15px to the bottom of the h1 element /
+margin-bottom: 15px;
+/ Sets the font-family of the h1 element to "slogan" /
+font-family: slogan;
+/ Adds 2px of spacing between letters of the text within the h1 element /
+letter-spacing: 2px;
+/ Includes the padding and border of the h1 element in the total width and height of the element /
+box-sizing: border-box;
+/ Sets the font-size of the h1 element to 24px */
+/* This block styles the h1 elements within the elements with class head_intro. 
+It sets the font-family of h1 to "slogan", adds 2px of letter spacing and set the
+ font-size to 24px, it also includes padding and border of the h1 element in the total
+  width and height of the element. It also adds a margin of 15px at the bottom of the h1 element. */
+.head_intro h1 {
+  margin-bottom: 15px;
+  font-family: slogan;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+/* Sets the font-size of the p element to 17px /
+font-size: 17px;
+/ Sets the font-family of the p element to "smallcursive" /
+font-family: smallcursive;
+/ Adds 1px of spacing between letters of the text within the p element /
+letter-spacing: 1px;
+/ Sets the font-weight of the p element to 600 /
+font-weight: 600;
+/ Adds 8px of padding around the text within the p element /
+padding: 8px;
+/ Sets the text color of the p element to a dark gray color */
+/* This block styles the <p> elements within the elements with class head_intro. 
+It sets the font-size of p to 17px, font-family to "smallcursive", adds 1px of letter
+ spacing and set the font-weight to 600 and also adds 8px of padding around the text 
+ within the p element. The text color of the p element is set to a dark gray color. */
+.head_intro p {
+  font-size: 17px;
+  font-family: smallcursive;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 8px;
+  color: #666;
+}
+
+/* Sets the background color of the element to a light blue color /
+background-color: rgb(242, 250, 250);
+/ Adds a padding of 30px around the element /
+padding: 30px;
+/ Adds a margin of 20px to the bottom of the element /
+margin-bottom: 20px;
+/ Adds a 1px solid black border to the element /
+border: 1px solid black;
+/ Removes the right border from the element */
+.comparebox {
+  background-color: rgb(242, 250, 250);
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-right: 0;
+}
+
+/* Adds a margin of 15px to the left of the h2 element /
+margin-left: 15px;
+/ Adds a margin of 45px to the bottom of the h2 element /
+margin-bottom: 45px;
+/ Sets the font-family of the h2 element to "slogan" /
+font-family: slogan;
+/ Adds 1px of spacing between letters of the text within the h2 element /
+letter-spacing: 1px;
+/ Sets the text color of the h2 element to a dark blue color */
+.comparebox h2 {
+  margin-left: 15px;
+  margin-bottom: 45px;
+  font-family: slogan;
+  letter-spacing: 1px;
+  color: rgb(3, 15, 99);
+}
+
+/* Adds a margin of 30px to the bottom of the .nav_figure2 and .nav_figure1 elements /
+margin-bottom: 30px;
+/ Adds a margin of 12px to the left of the .nav_figure2 and .nav_figure1 elements /
+margin-left: 12px;
+/ Adds a 0.01px solid black border to the .nav_figure2 and .nav_figure1 elements /
+border: 0.01px solid black;
+/ Sets the width of the .nav_figure2 and .nav_figure1 elements to 98% */
+.nav_figure2,
+.nav_figure1 {
+  margin-bottom: 30px;
+  margin-left: 12px;
+  border: 0.01px solid black;
+  width: 98%;
+}
+
+/* This block styles the elements with class "description" to have a light gray background color, 
+30px of padding and font-family "smallcursive". The text inside the element is centered, font-size
+ is 20px and font-weight is set to 500. The element also has a 1px solid black border. */
+.description {
+  background-color: #f4f4f4;
+  padding: 30px;
+  font-family: smallcursive;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+/* This block styles the "figure" element to have display as "flex", 
+flex-direction as "column" and align-items as center. This will align
+ all the child elements within the figure element along the center of
+  the cross axis in a column. */
+.comparebox figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* This block styles the span elements within the "comparebox figure" element 
+to have font-family "Franklin Gothic Medium", positioned 14px above its default 
+position, font-size of 20px, letter-spacing of 2px, and text with underline. The 
+underline color is set to #666 and thickness to 2px. The text color is set to a
+ dark gray color. */
+.comparebox figure span {
+  font-family: Franklin Gothic Medium;
+  position: relative;
+  top: -14px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-decoration-color: #666;
+  text-decoration-thickness: 2px;
+  color: rgb(78, 79, 86);
+}
+
+@media only screen and (max-width: 1001px) {
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1.5rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  .flex_nav ul li a {
+    color: #ffffff;
+  }
+
+  .head_intro {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+
+  .head_intro {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,1021 @@
+/* The .contain class applies to an element that serves as a container 
+for other content on the page. It has a position of relative, a width
+ and height of 100% and 87vh respectively, a background-image, background-size, 
+ background-repeat, and margin-top value, and a z-index of 2. This sets the 
+ container to take up the full width and most of the height of the viewport, 
+ with a background image, and positions it just below the top of the page. */
+
+html {
+  font-size: 100%;
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: smallcursive;
+  src: url("../fonts/smallcursive.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: bigbold;
+  src: url("../fonts/bigbold.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: slogan;
+  src: url("../fonts/slogan.ttf");
+}
+
+/* The html element has a font-size of 100%, which sets the 
+  default font size for the page to be equal 
+  to the default size of the user's web browser */
+
+/* The * rule applies to all elements on the page, setting 
+  the default padding and margin to 0 for all elements. */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* The nav element has a position of relative, which means that any 
+  absolutely positioned elements within it will be positioned relative 
+  to the nav element itself, rather than the entire page. */
+
+nav {
+  position: relative;
+}
+
+/* The #hed element has a display of block, a height of 100vh, and a width of 
+  100%, which makes it take up the full height and width of the viewport. 
+  It also has a position of relative and a top value of -0.4875rem, 
+  which shifts it upward slightly.*/
+
+#hed {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: -0.4875rem;
+}
+
+.fig_container img {
+  margin-left: 1rem;
+}
+
+.link_container {
+  flex: 60%;
+  margin-right: 7rem;
+}
+.nav_buttons {
+  flex: 30%;
+}
+
+/* The .link class applies to a table element,
+  and sets its position to relative, margin, width,
+  and height values, as well as its font-family, font-size,
+  and letter-spacing. It also has a top value of 23px, 
+  which shifts it downward slightly. */
+nav {
+  width: 100%;
+}
+
+.flex_nav {
+  display: flex;
+  width: 79%;
+  justify-content: center;
+  margin-top: -7rem;
+  margin-left: 8rem;
+}
+.flex_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: smallcursive;
+  font-size: 1.2rem;
+
+  flex: 100%;
+}
+.flex_nav ul li {
+  list-style-type: none;
+}
+.togmenu {
+  display: none;
+}
+
+.flex_nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.flex_nav ul li a:hover {
+  text-decoration-line: overline;
+  text-decoration-color: rgb(41, 244, 98);
+  text-decoration-thickness: 0.173rem;
+}
+
+.sbutton {
+  text-decoration: none;
+
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  font-family: consolas;
+  letter-spacing: 0.015625rem;
+  font-weight: bolder;
+}
+
+/* css for signin button */
+#signin_button {
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51);
+}
+
+#signin_button:hover {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51), 0 0 1.5625rem rgb(249, 11, 51);
+}
+
+#signup_button {
+  background: rgb(25, 240, 83);
+  box-shadow: 0 0 0.3125rem rgb(25, 240, 83);
+}
+
+#signup_button:hover {
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74);
+}
+
+.contain {
+  position: relative;
+  width: 100%;
+  height: 87vh;
+  background-image: url("../images/bg.png");
+  background-size: 100% 123%;
+  background-repeat: no-repeat;
+  /*for avoiding repetation of the background images*/
+  margin-top: 1.5625rem;
+  z-index: 2;
+  /* to make our contain div comes above other divs*/
+}
+
+/* for F Letter size */
+.contain h1 span {
+  font-size: 9.375rem;
+}
+
+/* The .contain h1 rule applies to a heading element and sets its position to absolute,
+ font-family to bigbold, color to #ffffff, letter-spacing to 0.25rem, left and top values to position 
+ it on the page, and its font-size to 4.375rem. */
+.contain h1 {
+  position: absolute;
+  font-family: bigbold;
+  color: #ffffff;
+  letter-spacing: 0.25rem;
+  left: 6.875rem;
+  top: 8.4375rem;
+  font-size: 4.375rem;
+}
+
+/* The .contain h3 rule applies to another heading element and sets its position,
+ font-family, color, letter-spacing, left, top, and font-size in a similar manner 
+ as the .contain h1 rule. */
+
+.contain h3 {
+  position: absolute;
+  font-family: slogan;
+  color: #82e8d8;
+  letter-spacing: 0.25rem;
+  left: 6.875rem;
+  top: 18.125rem;
+  font-size: 2.8125rem;
+}
+
+/* The .contain p is for the paragraph text inside contain div to set its position, color, 
+letter-spacing, left, top, font-size, font-family, and font-weigh */
+.contain p {
+  position: absolute;
+  color: #76f084;
+  letter-spacing: 0.3125rem;
+  left: 6.875rem;
+  /*positioning the paragraph element*/
+  top: 22.375rem;
+  /*positioning the paragraph element*/
+  font-size: 1.875rem;
+  font-family: smallcursive;
+  font-weight: bolder;
+}
+
+/* The .getstart_button class applies to a button element and sets its position,
+ color, letter-spacing, left, top, font-size, font-weight, text-decoration, padding, 
+ border-radius, background, and box-shadow values. It also has a hover effect that changes
+  the color, background, and box-shadow when the cursor is hovered over the button. */
+.getstart_button {
+  position: absolute;
+  color: #76f084;
+  letter-spacing: 0.3125rem;
+  left: 12rem;
+  top: 28.5rem;
+  font-size: 1.875rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1.875rem;
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51), 0 0 1.5625rem rgb(249, 11, 51),
+    0 0 2.8125rem rgb(249, 11, 51), 0 0 12.5rem rgb(249, 11, 51);
+}
+
+.getstart_button:hover {
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74),
+    0 0 2.8125rem rgb(11, 249, 74), 0 0 12.5rem rgb(11, 249, 74);
+}
+
+.info {
+  position: relative;
+  margin-top: 0.625rem;
+  width: 100%;
+  height: 50rem;
+  background-image: linear-gradient(rgb(233, 239, 255), rgb(13, 92, 128));
+  position: relative;
+}
+
+/* The .info #slogan rule applies to an element with the ID of slogan within the 
+.info container and sets its position, text-align, margin, font-family, letter-spacing,
+ font-size, color, padding, border-radius, background, width, and border values. */
+.info #slogan {
+  position: absolute;
+  text-align: center;
+  margin-top: 3.475rem;
+  margin-left: 8.125rem;
+  font-family: bigbold;
+  letter-spacing: 0.25rem;
+  font-size: 1.25rem;
+  color: rgb(2, 0, 3);
+  padding: 1.125rem 0 1.125rem 0;
+  border-radius: 0.625rem;
+  background: rgb(189, 247, 28);
+  width: 80%;
+  border: 0.001px solid black;
+}
+
+/* The .description_box class applies to a container element
+  and sets its position, width, height, background-image, margin,
+  top, border-radius, padding, and border values. */
+.description_box {
+  position: relative;
+  justify-content: space-evenly;
+  display: flex;
+  width: 90%;
+  height: 18.75rem;
+  background-image: linear-gradient(rgb(19, 19, 52), rgb(42, 62, 107));
+  margin: auto;
+  top: 9.375rem;
+  border-radius: 4.375rem;
+  padding: 2rem;
+  border: 0.1px solid black;
+}
+
+/* The #des1, #des2, #des3, and #des4 rules apply to elements with
+  the corresponding IDs and set their left, width, and background-color values.they are section having
+  all information about different webpages */
+
+#des1 {
+  width: 20rem;
+  background-color: #f4f4f4;
+}
+
+#des2 {
+  width: 20rem;
+  background-color: #f4f4f4;
+}
+
+#des3 {
+  width: 20rem;
+  background-color: #f4f4f4;
+}
+
+#des4 {
+  width: 20rem;
+  background-color: #f4f4f4;
+}
+
+/* The .des class applies to elements within the .description_box container
+  and sets their text-align, position, height, border-radius, margin-top, and border values. des is class of
+  all section having other elements like logo and paragraph having information of other
+  webpages*/
+.des {
+  text-align: center;
+  height: 35rem;
+  border-radius: 2.5rem;
+  border: 0.125rem solid black;
+}
+
+/* hover effect to description boxes */
+.des:hover {
+  transform: translateY(-0.8%);
+  box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+/* The .des p rule applies to p elements within elements with the
+  .des class and sets their margin-top, padding, font-size, font-family,
+  font-weight, and color values */
+.des p {
+  padding: 0.9375rem;
+  font-size: 1.5625rem;
+  font-family: smallcursive;
+  font-weight: 550px;
+  color: rgb(62, 61, 61);
+}
+
+/* The .des h1 rule applies to h1 elements within elements with the
+ .des class and sets their font-family and letter-spacing values. */
+.des h1 {
+  font-family: slogan;
+  letter-spacing: 0.125rem;
+}
+
+.des p a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 2.5rem;
+  padding: 0.9375rem;
+  border-radius: 1.875rem;
+  font-family: bigbold;
+  font-size: 1.125rem;
+  letter-spacing: 0.1875rem;
+  background: rgb(249, 11, 51);
+}
+
+.des p a:hover {
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74);
+}
+
+footer {
+  position: relative;
+  background-color: #1f1d1e;
+  width: 100%;
+  height: 28.25rem;
+  margin-top: 1.5625rem;
+}
+
+.footerwrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec1 {
+  width: 24.375rem;
+}
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24.375rem;
+}
+.sec3 {
+  width: 16.875rem;
+}
+.sec3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec1,
+.sec2,
+.sec3 {
+  margin-top: 1.25rem;
+}
+.footer_title {
+  color: white;
+  font-family: bigbold;
+  font-family: consolas;
+  letter-spacing: 0.0625rem;
+  font-size: 1.5rem;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer_para {
+  color: white;
+  font-family: smallcursive;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+.fsumbit {
+  margin-top: 0.3125rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  font-size: 1.1875rem;
+  letter-spacing: 0.1875rem;
+  font-family: courier;
+  font-weight: bolder;
+  border-radius: 0.625rem;
+  background-color: #76f084;
+}
+
+.fsumbit:hover {
+  background-color: rgb(20, 160, 134);
+  cursor: pointer;
+  transition: 0.9s;
+}
+.ulinks {
+  font-family: courier;
+  font-size: 1.375rem;
+  font-weight: bolder;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+  color: white;
+  letter-spacing: 1px;
+  width: 15rem;
+  text-align: center;
+}
+
+.sec3 li {
+  list-style-type: none;
+
+  letter-spacing: 0.25rem;
+  font-family: smallcursive;
+  margin-bottom: 3.125rem;
+}
+
+/* The .fsec3 li a style adds styling to links within list items
+      within the third section of the footer element. */
+.sec3 li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#feedback {
+  resize: none;
+  background-color: #2f2e2e;
+  color: aliceblue;
+  height: 15rem;
+  width: 25rem;
+}
+
+/* The .fsec3 ul li a:hover style adds a hover effect to links within list
+      items within the third section of the footer element. */
+.sec3 ul li a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  transition: 1.5s;
+  text-decoration-thickness: 0.1875rem;
+}
+
+@media only screen and (max-width: 600px) {
+  /* max-width: 600px */
+  html {
+    font-size: 52%;
+  }
+  .flex_nav {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contain {
+    height: 31rem;
+    margin-top: 5.5625rem;
+  }
+  #hed {
+    height: 39rem;
+  }
+  .description_box {
+    height: 151.75rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    height: 167rem;
+    margin-top: 0.625rem;
+  }
+  #des1 {
+    width: 95%;
+  }
+  #des2 {
+    width: 95%;
+  }
+  #des3 {
+    width: 95%;
+  }
+  #des4 {
+    width: 95%;
+  }
+  .des {
+    height: 34rem;
+  }
+  .des p {
+    font-size: 2rem;
+  }
+  .footerwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+
+  .footer_para {
+    font-size: 2rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 19rem;
+    width: 28rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 10.75rem;
+    height: 3.5rem;
+    font-size: 1.4875rem;
+  }
+  .ulinks {
+    font-size: 2rem;
+    width: 98%;
+  }
+  .sec3 li {
+    font-size: 1.8rem;
+  }
+  .info #slogan {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 99%;
+    margin: 2rem 0rem;
+  }
+  .contain h1 {
+    left: 2.875rem;
+    top: 1.4375rem;
+    font-size: 3.4rem;
+  }
+  .getstart_button {
+    left: 3rem;
+    top: 23.8rem;
+    font-size: 1rem;
+  }
+  .contain p {
+    left: 2.875rem;
+    top: 17.375rem;
+    font-size: 1.8rem;
+  }
+
+  .contain h3 {
+    left: 2.875rem;
+    top: 13.125rem;
+    font-size: 2rem;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 50rem;
+    margin-top: -1rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .flex_nav ul li a {
+    font-size: 2.4rem;
+    color: #f4f4f4;
+  }
+
+  .sbutton {
+    font-size: 2.25rem;
+    border-radius: 2.25rem;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .menuclose {
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+  }
+  .logo {
+    position: relative;
+    top: 0.7rem;
+  }
+}
+
+/* //for tablets */
+/* @media only screen and (max-width: 601px) { */
+@media only screen and (min-width: 601px) and (max-width: 728px) {
+  html {
+    font-size: 65%;
+  }
+
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 42rem;
+    margin-top: -1rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+  #hed {
+    height: 39rem;
+  }
+  .togmenu {
+    display: flex;
+  }
+  .menuclose {
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+  }
+
+  .contain {
+    margin-top: 5.5625rem;
+    height: 32rem;
+  }
+
+  footer {
+    height: auto;
+    width: 100%;
+  }
+
+  .footerwrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+  .footer_para {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 19rem;
+    width: 28rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 10.75rem;
+    height: 3.5rem;
+    font-size: 1.4875rem;
+  }
+  .ulinks {
+    font-size: 1.5rem;
+    width: 98%;
+  }
+
+  .sec3 li {
+    font-size: 1.3rem;
+  }
+
+  .info {
+    height: 126rem;
+  }
+  .description_box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .info #slogan {
+    margin-left: 0;
+
+    font-size: 0.9rem;
+
+    width: 99%;
+  }
+  .fsumbit {
+    width: 7.75rem;
+    height: 2.9rem;
+    font-size: 1.2rem;
+  }
+  #des1,
+  #des2,
+  #des3,
+  #des4 {
+    width: 37rem;
+    height: 24rem;
+    margin-bottom: 3rem;
+  }
+  #des1 {
+    margin-top: 3rem;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 3rem;
+  }
+
+  .flex_nav ul li a {
+    font-size: 1.8rem;
+    color: #f4f4f4;
+  }
+
+  .sbutton {
+    font-size: 1.6rem;
+    border-radius: 2.25rem;
+  }
+
+  .contain h1 {
+    font-size: 3.375rem;
+    left: 1.875rem;
+    top: 5.4375rem;
+  }
+  .contain h3 {
+    font-size: 2rem;
+    left: 2.875rem;
+    top: 16.125rem;
+  }
+  .contain p {
+    top: 20.375rem;
+    left: 2.875rem;
+  }
+  .getstart_button {
+    left: 3rem;
+    top: 26.5rem;
+    font-size: 1.475rem;
+  }
+}
+/* for small laptops and ipads */
+/* @media only screen and (max-width: 729px) { */
+@media only screen and (min-width: 728px) and (max-width: 991px) {
+  html {
+    font-size: 70%;
+  }
+
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 42rem;
+    margin-top: -1rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+
+  .description_box {
+    height: 82.75rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sbutton {
+    font-size: 0.8rem;
+  }
+
+  .flex_nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  #des1,
+  #des2,
+  #des3,
+  #des4 {
+    width: auto;
+
+    margin-bottom: 3rem;
+  }
+  #des1 {
+    height: 21rem;
+  }
+  #des4 {
+    height: 23rem;
+  }
+  #des2 {
+    height: 32rem;
+    flex: 1;
+    margin-right: 1.5rem;
+  }
+
+  #des3 {
+    height: 32rem;
+    flex: 1;
+  }
+  .info {
+    height: 98rem;
+  }
+  .des p a {
+    top: 1.9rem;
+  }
+  footer {
+    height: auto;
+    width: 100%;
+  }
+
+  .footerwrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+  .footer_para {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 19rem;
+    width: 28rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 10.75rem;
+    height: 3.5rem;
+    font-size: 1.4875rem;
+  }
+  .ulinks {
+    font-size: 1.5rem;
+    width: 98%;
+  }
+
+  .sec3 li {
+    font-size: 1.3rem;
+  }
+  .info #slogan {
+    margin-left: 0;
+
+    font-size: 0.9rem;
+
+    width: 99%;
+  }
+  .contain {
+    margin-top: 5.5625rem;
+    height: 40rem;
+  }
+  #hed {
+    height: 47rem;
+  }
+  .contain h1 {
+    top: 4.4375rem;
+    left: 3.875rem;
+  }
+  .contain h3 {
+    top: 15.125rem;
+    left: 4.875rem;
+  }
+  .contain p {
+    top: 20.375rem;
+    left: 4.875rem;
+  }
+  .getstart_button {
+    left: 5rem;
+    top: 27.5rem;
+    font-size: 1.175rem;
+  }
+
+  .togmenu {
+    top: 0rem;
+    right: 2rem;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1287px) {
+  html {
+    font-size: 74%;
+  }
+  .info {
+    height: 62rem;
+  }
+  .contain {
+    height: 49rem;
+  }
+
+  #hed {
+    height: 56rem;
+  }
+  .contain h1 {
+    left: 5.875rem;
+    top: 8.4375rem;
+    font-size: 6.175rem;
+  }
+  .contain h3 {
+    font-size: 3.4125rem;
+    top: 19.125rem;
+  }
+  .getstart_button {
+    left: 10rem;
+    top: 34.5rem;
+    font-size: 2.3rem;
+  }
+  .contain p {
+    font-size: 2.775rem;
+    top: 24.375rem;
+  }
+  .flex_nav ul li a {
+    font-size: 1.8rem;
+  }
+  #des1,
+  #des2,
+  #des3,
+  #des4 {
+    width: 29rem;
+    margin: 0.5rem;
+    height: 47rem;
+  }
+  .des p {
+    font-size: 1.8rem;
+  }
+  .footer_para {
+    font-size: 1.425rem;
+  }
+
+  .sec3 li {
+    font-size: 1.3rem;
+  }
+}

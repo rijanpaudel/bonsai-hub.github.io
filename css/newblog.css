@@ -1,0 +1,931 @@
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: smallcursive;
+  src: url("../fonts/smallcursive.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: bigbold;
+  src: url("../fonts/bigbold.ttf");
+}
+
+/* The @font-face rules define custom fonts to be used on the site, with the font-family  */
+
+@font-face {
+  font-family: slogan;
+  src: url("../fonts/slogan.ttf");
+}
+
+/* The html element has a font-size of 100%, which sets the 
+  default font size for the page to be equal 
+  to the default size of the user's web browser */
+
+/* The * rule applies to all elements on the page, setting 
+  the default padding and margin to 0 for all elements. */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* The nav element has a position of relative, which means that any 
+  absolutely positioned elements within it will be positioned relative 
+  to the nav element itself, rather than the entire page. */
+
+nav {
+  position: relative;
+}
+
+/* The #hed element has a display of block, a height of 100vh, and a width of 
+  100%, which makes it take up the full height and width of the viewport. 
+  It also has a position of relative and a top value of -0.4875rem, 
+  which shifts it upward slightly.*/
+
+#hed {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: -0.4875rem;
+}
+
+.fig_container img {
+  margin-left: 1rem;
+}
+
+.link_container {
+  flex: 60%;
+  margin-right: 7rem;
+}
+.nav_buttons {
+  flex: 30%;
+}
+
+/* The .link class applies to a table element,
+  and sets its position to relative, margin, width,
+  and height values, as well as its font-family, font-size,
+  and letter-spacing. It also has a top value of 23px, 
+  which shifts it downward slightly. */
+
+.flex_nav {
+  display: flex;
+  width: 79%;
+  justify-content: center;
+  margin-top: -7rem;
+  margin-left: 8rem;
+}
+.flex_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: smallcursive;
+  font-size: 1.2rem;
+
+  flex: 100%;
+}
+.flex_nav ul li {
+  list-style-type: none;
+}
+
+.flex_nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+.flex_nav ul li a:hover {
+  text-decoration-line: overline;
+  text-decoration-color: rgb(41, 244, 98);
+  text-decoration-thickness: 0.173rem;
+}
+
+.sbutton {
+  text-decoration: none;
+
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 1.25rem;
+  color: #ffffff;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  font-family: consolas;
+  letter-spacing: 0.015625rem;
+  font-weight: bolder;
+}
+
+/* css for signin button */
+#signin_button {
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51);
+}
+
+#signin_button:hover {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 0.3125rem rgb(249, 11, 51), 0 0 1.5625rem rgb(249, 11, 51);
+}
+
+#signup_button {
+  background: rgb(25, 240, 83);
+  box-shadow: 0 0 0.3125rem rgb(25, 240, 83);
+}
+
+#signup_button:hover {
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 0.3125rem rgb(11, 249, 74), 0 0 1.5625rem rgb(11, 249, 74);
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+.block {
+  text-align: center;
+  background-color: #170725;
+  color: aliceblue;
+  width: 100%;
+  margin-top: 1.4rem;
+  font-size: 2.5rem;
+  height: 4.375rem;
+  line-height: 4.375rem;
+  margin-bottom: 0.0625rem;
+  font-family: slogan;
+  letter-spacing: 0.1875rem;
+  font-weight: 500;
+}
+
+.flex_containerbox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: gold;
+}
+
+.sidenav {
+  width: 30%;
+  height: auto;
+  background-color: black;
+}
+
+.sidenav section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  height: 39.25rem;
+  padding-top: 2.5rem;
+  letter-spacing: 0.25rem;
+  color: aliceblue;
+  justify-content: space-evenly;
+}
+
+.sidenav section h1 {
+  position: relative;
+  top: -1.875rem;
+  font-family: slogan;
+  margin-bottom: 3.75rem;
+  border: 0.0625rem solid white;
+  padding: 0.5rem;
+  width: 56.25%;
+  text-align: center;
+  background-color: rgb(216, 133, 8);
+}
+
+.sidenav section a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: smallcursive;
+  padding-bottom: 3.75rem;
+  position: relative;
+  top: -1.875rem;
+}
+.listmenu {
+  position: absolute;
+  border: 1px solid black;
+  top: 9rem;
+  left: 1rem;
+  display: none;
+}
+.closemenlist {
+  position: absolute;
+  z-index: 6;
+  right: 1rem;
+  top: 1rem;
+  display: none;
+}
+
+.sidenav section a p:hover {
+  color: rgb(255, 0, 106);
+  transition: 0.8s;
+}
+
+.mainbody {
+  width: 70%;
+}
+.togmenu {
+  display: none;
+  width: 2.5rem;
+}
+
+#darkmode {
+  position: fixed;
+  z-index: 5;
+  outline: 0;
+  border: 0;
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 50%;
+  right: 2.5rem;
+  top: 39.0625rem;
+  border: 0.125rem solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#darkmode:hover {
+  transform: translateY(-2%);
+  border: 0.3125rem solid rgb(250, 179, 0);
+}
+
+.dark-mode {
+  background-color: #101010 !important;
+  color: aliceblue;
+}
+
+/* for toggle darkmode */
+.dark-text {
+  color: aliceblue;
+}
+
+.parallex {
+  margin-left: 0.25rem;
+  width: 99.7%;
+  height: 34.375rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parallexone {
+  margin-top: 0.0625rem;
+  background-image: url(../images/p1.jpg);
+}
+
+#parallextwo {
+  background-image: url(../images/P2.jpg);
+  margin-top: 0.375rem;
+}
+
+#parallexthree {
+  background-image: url(../images/p3.jpg);
+  margin-top: 0.375rem;
+}
+
+#parallexfour {
+  background-image: url(../images/p4.jpg);
+  margin-top: 0.375rem;
+}
+
+#parallexfive {
+  background-image: url(../images/p6.jpg);
+  margin-top: 0.375rem;
+}
+
+.parallex h1 {
+  color: rgb(0, 0, 0);
+  mix-blend-mode: screen;
+  /* This makes the cutout text possible */
+  background-color: #ffffff;
+  font-size: 3.125rem;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.1875rem;
+  font-family: Verdana;
+  padding: 2.1875rem;
+  border-radius: 1.25rem;
+  opacity: 0.8;
+}
+
+#parallexone h1 {
+  width: 51.25rem;
+}
+
+#parallextwo h1 {
+  width: 56.25rem;
+}
+
+#parallexthree h1 {
+  width: 56.25rem;
+}
+
+#parallexfour h1 {
+  width: 56.25rem;
+}
+
+#parallexfive h1 {
+  width: 56.25rem;
+  opacity: 0.7;
+}
+
+.parabox {
+  margin-top: 5.6px;
+  background-color: #eaf3f3;
+  width: 100%;
+  margin-left: 0.25rem;
+  padding: 1.5rem;
+  text-align: justify;
+  line-height: 2;
+  font-family: arial;
+  letter-spacing: 1.5px;
+  font-family: Cambria;
+}
+
+.tech {
+  font-size: 2rem;
+}
+
+footer {
+  position: relative;
+  background-color: #1f1d1e;
+  width: 100%;
+  height: 28.25rem;
+  margin-top: -0.4375rem;
+}
+
+.footerwrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec1 {
+  width: 24.375rem;
+}
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24.375rem;
+}
+.sec3 {
+  width: 16.875rem;
+}
+.sec3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec1,
+.sec2,
+.sec3 {
+  margin-top: 1.25rem;
+}
+.footer_title {
+  color: white;
+  font-family: bigbold;
+  font-family: consolas;
+  letter-spacing: 0.0625rem;
+  font-size: 1.5rem;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer_para {
+  color: white;
+  font-family: smallcursive;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+.fsumbit {
+  margin-top: 0.3125rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  font-size: 1.1875rem;
+  letter-spacing: 0.1875rem;
+  font-family: courier;
+  font-weight: bolder;
+  border-radius: 0.625rem;
+  background-color: #76f084;
+}
+
+.fsumbit:hover {
+  background-color: rgb(20, 160, 134);
+  cursor: pointer;
+  transition: 0.9s;
+}
+.ulinks {
+  font-family: courier;
+  font-size: 1.375rem;
+  font-weight: bolder;
+  border: 1px outset white;
+  padding: 0.5rem;
+  margin-bottom: 1.25rem;
+  color: white;
+  letter-spacing: 1px;
+  width: 15rem;
+  text-align: center;
+}
+
+.sec3 li {
+  list-style-type: none;
+
+  letter-spacing: 0.25rem;
+  font-family: smallcursive;
+  margin-bottom: 3.125rem;
+}
+
+/* The .fsec3 li a style adds styling to links within list items
+            within the third section of the footer element. */
+.sec3 li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#feedback {
+  resize: none;
+  background-color: #2f2e2e;
+  color: aliceblue;
+  height: 15rem;
+  width: 25rem;
+}
+
+/* The .fsec3 ul li a:hover style adds a hover effect to links within list
+            items within the third section of the footer element. */
+.sec3 ul li a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+  transition: 1.5s;
+  text-decoration-thickness: 0.1875rem;
+}
+.logo {
+  width: 11rem;
+  height: 10rem;
+  margin-top: -1.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    overflow-x: hidden;
+    font-size: 90%;
+  }
+  .parallex {
+    background-attachment: unset;
+    margin-left: 0;
+    height: 18rem;
+    background-size: cover;
+  }
+  .sidenav {
+    height: 88vh;
+    background-color: black;
+    position: absolute;
+
+    z-index: 4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 100%;
+    transition: 1.1s;
+  }
+
+  .listmenu {
+    display: block;
+    top: 4.5rem;
+    width: 2.2rem;
+    border: 0;
+  }
+  .closemenlist {
+    display: block;
+    width: 2.3rem;
+  }
+
+  .flex_containerbox {
+    display: block;
+    width: 100%;
+  }
+  .mainbody {
+    width: 100%;
+  }
+  .parabox {
+    width: 100%;
+    margin-left: 0;
+    padding: 1.75rem;
+    box-sizing: border-box;
+  }
+
+  #parallexone h1,
+  #parallextwo h1,
+  #parallexthree h1,
+  #parallexfour h1,
+  #parallexfive h1 {
+    width: auto;
+    font-size: 1.325rem;
+  }
+
+  .footerwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+
+  .footer_para {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 15rem;
+    width: 19rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 8.75rem;
+    height: 2.8rem;
+    font-size: 1.1875rem;
+  }
+  .ulinks {
+    font-size: 1.1rem;
+    width: 98%;
+  }
+  .sec3 li {
+    font-size: 1.1rem;
+  }
+  .info #slogan {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 99%;
+    margin: 2rem 0rem;
+  }
+  .contain h1 {
+    left: 2.875rem;
+    top: 1.4375rem;
+    font-size: 3.4rem;
+  }
+  .getstart_button {
+    left: 3rem;
+    top: 23.8rem;
+    font-size: 1rem;
+  }
+  .contain p {
+    left: 2.875rem;
+    top: 17.375rem;
+    font-size: 1.8rem;
+  }
+
+  .contain h3 {
+    left: 2.875rem;
+    top: 13.125rem;
+    font-size: 2rem;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .block {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #darkmode {
+    height: 2.75rem;
+    width: 2.75rem;
+    right: 1.5rem;
+    top: 36.0625rem;
+  }
+  .sidenav section {
+    height: 40.25rem;
+  }
+  .togmenu {
+    display: flex;
+  }
+
+  .menuclose {
+    right: 1rem;
+    top: 1rem;
+  }
+  .tech {
+    font-size: 1.5rem;
+  }
+  .sidenav section a {
+    font-size: 1.23rem;
+  }
+
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1.5rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  .flex_nav ul li a {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1025px) {
+  html {
+    overflow-x: hidden;
+    font-size: 95%;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.1rem;
+  }
+  .flex_containerbox {
+    width: 100%;
+  }
+  .sidenav {
+    width: 30%;
+    flex: initial;
+    height: auto;
+    background-color: black;
+    display: flex;
+
+    justify-content: center;
+  }
+  .mainbody {
+    flex: inherit;
+    width: 70%;
+  }
+  .footerwrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  .sec1,
+  .sec2,
+  .sec3 {
+    margin-top: 6.25rem;
+    width: 85%;
+  }
+
+  .footer_para {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .footer_title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #feedback {
+    height: 20rem;
+    width: 29rem;
+  }
+  .fsumbit {
+    margin-top: 1.3125rem;
+    width: 8.75rem;
+    height: 2.8rem;
+    font-size: 1.1875rem;
+  }
+  .ulinks {
+    font-size: 1.1rem;
+    width: 98%;
+  }
+  .sec3 li {
+    font-size: 1.1rem;
+  }
+  #darkmode {
+    right: 1rem;
+  }
+  .parabox {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #parallexone h1,
+  #parallextwo h1,
+  #parallexthree h1,
+  #parallexfour h1,
+  #parallexfive h1 {
+    width: auto;
+    font-size: 1.825rem;
+  }
+  .sidenav section h1 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .block {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .parallex {
+    width: 99%;
+    height: 23.375rem;
+
+    background-size: cover;
+  }
+  .sidenav section {
+    align-items: flex-start;
+  }
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+
+  .flex_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: smallcursive;
+    font-size: 1.2rem;
+    flex: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: #210c32;
+    width: 100%;
+    height: 40rem;
+    margin-top: -1.5rem;
+    /* display: none; */
+    right: 100%;
+    transition: 1s;
+  }
+
+  .logo {
+    position: relative;
+    top: -1.6rem;
+    width: 9rem;
+    height: 8rem;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .togmenu {
+    display: flex;
+  }
+  .ham {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 4rem;
+  }
+  .togmenu {
+    position: absolute;
+    width: 2.5rem;
+    top: -1rem;
+  }
+
+  .menuclose {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+
+  .flex_nav ul li a {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .flex_containerbox {
+    width: 100%;
+  }
+  html {
+    overflow-x: hidden;
+    font-size: 90%;
+  }
+
+  #parallexone h1,
+  #parallextwo h1,
+  #parallexthree h1,
+  #parallexfour h1,
+  #parallexfive h1 {
+    width: auto;
+
+    font-size: 2.525rem;
+  }
+  .parallex {
+    height: 31.375rem;
+    background-size: cover;
+  }
+
+  .sidenav {
+    width: 30%;
+    flex: initial;
+    height: auto;
+    background-color: black;
+    display: flex;
+
+    justify-content: center;
+  }
+  .mainbody {
+    flex: inherit;
+    width: 70%;
+  }
+  .parabox {
+    width: 100%;
+
+    padding: 1.75rem;
+  }
+  .sidenav section h1 {
+    width: 61.25%;
+  }
+  .block {
+    width: 100%;
+  }
+
+  #product1 img {
+    width: 206px;
+  }
+}

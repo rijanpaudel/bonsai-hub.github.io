@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- meta tags -->
+
+  <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+  <meta name="description" content="In this webpage you will loginin into your account" />
+
+
+  <!-- A <meta> tag with a "name" attribute set to "keyword" and a "content" attribute that contains a list of keywords related to the webpage. -->
+  <meta name="keyword" content="bonsai, bonai website, bonsai hub, buy bonsai plant" />
+
+
+  <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+  <meta name="author" content="miraj deep bhandari, rijan paudel, jenish katwal , umang pradhananga, gazal bishowkarma" />
+
+  <!-- A <meta> tag with a "http-equiv" attribute set to "X-UA-Compatible" and a "content" attribute set to "IE=edge" -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--meta tags-->
+  <link rel="stylesheet" href="../css/form.css">
+  <!--linking css file-->
+  <title>Sign In</title>
+</head>
+
+<!-- internal js -->
+<script>
+
+  // Function to validate form input when the form is submitted
+
+  function validate() {
+    // Get the value of the email and password fields
+
+    var email = document.forms["form1"]["email"].value;
+
+    var password = document.forms["form1"]["password"].value;
+
+
+    // Check if either the email or password field is empty
+
+    if (email == "" || password == "") {
+      // If either field is empty, display an alert message
+
+      alert("OPPS ! You Have Forgetten Something To Fill.");
+    } else {
+      // If both fields are filled, display an alert message
+
+      alert("We Have Send Verification LINK In you Email Please Click On It For Sign In.");
+    }
+  }
+
+
+
+</script>
+
+<body>
+
+  <!-- Header element containing the logo and navigation bar -->
+  <header id="hed">
+
+
+    <nav>
+      <img src="../images/logo.png" class="logo">
+
+      <div class="flex_nav">
+
+        <ul id="resp_nav">
+          <img src="../icons/close1.png" style="position: absolute; width: 3rem;" class="togmenu menuclose"
+            onclick="closever()">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="blog.html ">Blog</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About us</a></li>
+          <a href="signup.html" class="sbutton" id="signup_button">Sign up</a>
+          <a href="login.html" class="sbutton" id="signin_button">Sign in</a>
+        </ul>
+
+      </div>
+      <figure class="ham">
+
+        <img src="../icons/menu2.png" class="togmenu closeit" onclick="openver()">
+        <!-- <img src="icons/close1.png" style="position: absolute; width: 3rem;" class="togmenu"> -->
+
+      </figure>
+
+
+    </nav>
+
+
+
+
+
+  </header>
+
+
+  <!-- Container element for the form -->
+  <div id="container">
+    <!-- Form wrapper -->
+    <div class="form-wrap">
+
+      <form name="form1" onsubmit="validate()">
+        <!-- Email field -->
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <!-- Password field -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+        </div>
+        <!-- Checkbox for staying signed in -->
+        <br>
+        <div>
+          <input type="checkbox">
+          <label>Stay Signed In</label>
+        </div>
+        <!-- Submit button -->
+        <button type="submit">Sign In</button>
+      </form>
+      <!-- Form close -->
+    </div>
+    <!-- Form wrapper close -->
+    <!-- Footer element containing a link to the sign up page -->
+    <footer>
+      <p><span style="color:white;">Haven't Registered Yet?</span><a href="signup.html">Sign Up</a></p>
+    </footer>
+  </div>
+
+</body>
+
+<script>
+
+  function openver() {
+
+    document.getElementById('resp_nav').style.right = '0%';
+
+  }
+  function closever() {
+
+    document.getElementById('resp_nav').style.right = '100%';
+
+  }
+
+
+
+</script>
+
+</html>

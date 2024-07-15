@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+
+<!-- The opening <html> tag, with a "lang" attribute set to "en" -->
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+
+    <!-- A <meta> tag with a "name" attribute set to "description" and a "content" attribute that contains a description of the webpage. -->
+    <meta name="description"
+        content="In this webpage you will get information about bonsai products and its related information " />
+
+
+    <!-- A <meta> tag with a "name" attribute set to "keyword" and a "content" attribute that contains a list of keywords related to the webpage. -->
+    <meta name="keyword" content="bonsai, bonai website, bonsai hub, buy bonsai plant" />
+
+
+    <!-- A <meta> tag with a "name" attribute set to "author" and a "content" attribute that contains the names of the authors of the webpage. -->
+    <meta name="author" content="miraj deep bhandari, rijan paudel, jenish katwal , umang pradhananga, gazal bishowkarma" />
+
+    <!-- A <meta> tag with a "http-equiv" attribute set to "X-UA-Compatible" and a "content" attribute set to "IE=edge" -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- A <meta> tag with a "name" attribute set to "viewport" and a "content" attribute that specifies the viewport settings for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PRODUCTS</title>
+
+    <!-- LINKING CSS TO PRODUCT PAGE -->
+    <link rel="stylesheet" href="../css/products.css">
+    <!-- <link rel="stylesheet" href="../css/nav.css"> -->
+
+    <!-- LINKING JAVASCRIPT TO HTML FILE -->
+    <script src="../javascript/flypic.js"></script>
+
+</head>
+
+<!-- internal javascript -->
+
+<script>
+
+
+
+    // This function displays an alert message
+    function order() {
+
+        alert("your order will be delivered to you please give us location and your contact number in email");
+
+    }
+
+    //for textvalidation
+    function fback() {
+
+        var fb = document.forms["inquiry"]["feedback"].value;
+        if (fb == "                 ") {
+            alert('unable to send empty text');
+        }
+        else {
+
+            alert('we have sucessfully received your inquiry we will reply you in your given mail');
+        }
+
+
+    }
+
+
+
+</script>
+
+
+
+<!-- body starts -->
+
+<body>
+
+    <header>
+
+        <nav>
+            <img src="../images/logo.png" class="logo">
+
+            <div class="flex_nav">
+
+                <ul id="resp_nav">
+                    <img src="../icons/close1.png" class="togmenu menuclose" onclick="closever()">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="blog.html ">Blog</a></li>
+                    <li><a href="products.html" style=" text-decoration: overline;text-decoration-color: rgb(250, 0, 0);
+                    text-decoration-thickness: 2px;">Products</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <a href="signup.html" class="sbutton" id="signup_button">Sign up</a>
+                    <a href="login.html" class="sbutton" id="signin_button">Sign in</a>
+                </ul>
+
+            </div>
+            <figure class="ham">
+
+                <img src="../icons/menu.png" class="togmenu closeit" onclick="openver()">
+                <!-- <img src="icons/close1.png" style="position: absolute; width: 3rem;" class="togmenu"> -->
+
+            </figure>
+
+        </nav>
+
+        <!-- This div element contains the products displayed on the page -->
+
+        <div id="products_body">
+
+            <div class="flex_container">
+
+                <div class="bar">
+
+                    <div class="sb">
+                        <input type="search" class="searchsec">
+                        <button class="buttonsec"><img src="../icons/search.png" class="btnimg"> </button>
+                    </div>
+
+                </div>
+
+                <div class="pic_icons">
+
+                    <a href="#"><img src="../icons/profile.png" class="prof"></a>
+
+                    <div class="cart_ani" style="display: inline-block;">
+                        <p id="counter">0</p>
+                        <a href="#"><img src="../icons/cart.png" class="cart"></a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- our products heading text -->
+        <h1 class="our_products">OUR PRODUCTS</h1>
+
+
+        <div class="flex_container_products">
+
+            <!-- for 1st item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+
+
+                <div class="card">
+
+                    <!-- front face of the product -->
+                    <div class="front" id="product1">
+
+                        <!-- image of the product -->
+                        <img src="../images/satsuki_azalea.jpg" class="m1">
+
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Satsuki Azalea
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $30.25</h2><br>
+                            <p><i>Age: 4 years old</i></p><br>
+                            <p><i>Height: 2.3 ft</i></p><br>
+                            <p><i>Origin: Japan</i></p>
+                            <p class="dprice">25% off</p>
+
+
+                        </section>
+
+                        <!-- description of the product -->
+                    </div>
+
+
+
+                    <!-- back face of the product -->
+
+                    <div class="back">
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_1()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- for second item -->
+
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- front face of the product -->
+                    <div class="front">
+
+                        <!-- image of the product -->
+
+                        <img src="../images/juniper.jpg" class="m2">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Juniper Plant
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $80.25</h2><br>
+                            <p><i>Age: 3.5 years old</i></p><br>
+                            <p><i>Height: 3.3 ft</i></p><br>
+                            <p><i>Origin: China</i></p>
+                            <p class="dprice" style="background-color: #ab0a1a;">40% off</p>
+
+
+                        </section>
+
+                    </div>
+
+                    <!-- back face of the product -->
+                    <div class="back">
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_2()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- for third item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- front face of the product -->
+                    <div class="front">
+                        <!-- image of the product -->
+
+                        <img src="../images/gardenia.jpg" class="m3">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name" id="miraj">
+                            Gardenia
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $70.25</h2><br>
+                            <p><i>Age: 2 years old</i></p><br>
+                            <p><i>Height: 3.8 ft</i></p><br>
+                            <p><i>Origin: China</i></p>
+                            <p class="dprice">35% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- back face of the product -->
+                    <div class="back">
+
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_3()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- for fourth item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- front face of the product -->
+                    <div class="front">
+
+                        <!-- image of the product -->
+                        <img src="../images/dwarf_podocarpus.jpg" class="m4">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Dwarf Podocarpus
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $96.25</h2><br>
+                            <p><i>Age: 4 years old</i></p><br>
+                            <p><i>Height: 2.3 ft</i></p><br>
+                            <p><i>Origin: Japan</i></p>
+                            <p class="dprice" style="background-color: #ab0a1a;">47% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- back face of the product -->
+
+                    <div class="back">
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_4()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- for fifth item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- front face of the card -->
+                    <div class="front">
+
+                        <!-- product image -->
+                        <img src="../images/japanese_black_pine.jpg" class="m5">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Black Pine
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $88.25</h2><br>
+                            <p><i>Age: 1.5 years old</i></p><br>
+                            <p><i>Height: 3.3 ft</i></p><br>
+                            <p><i>Origin: Japan</i></p>
+                            <p class="dprice" style="background-color: #ab0a1a;">45% off</p>
+                        </section>
+                    </div>
+
+                    <!-- back of the products -->
+
+                    <div class="back">
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_5()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- for sixth item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+
+                <div class="card">
+
+                    <!-- front face of product div -->
+
+                    <div class="front">
+                        <!-- product image -->
+
+                        <img src="../images/barbados_cherry.jpg" class="m6">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Barbados Cherry
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $53.25</h2><br>
+                            <p><i>Age: 2.5 years old</i></p><br>
+                            <p><i>Height: 3.3 ft</i></p><br>
+                            <p><i>Origin: China</i></p>
+                            <p class="dprice">18% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- product back face -->
+
+                    <div class="back">
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_6()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- for seveth item -->
+
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- product front face -->
+                    <div class="front">
+
+                        <!-- product image -->
+                        <img src="../images/hawaiian_umbrella.jpg" class="m7">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Hawaiian Umbrella
+                        </h1><br>
+                        <section class="plantdetails">
+                            <h2>Price: $60.95</h2><br>
+                            <p><i>Age: 2 years old</i></p><br>
+                            <p><i>Height: 3.9 ft</i></p><br>
+                            <p><i>Origin: Taiwan</i></p>
+                            <p class="dprice">30% off</p>
+                        </section>
+                    </div>
+
+                    <!-- back side of card -->
+                    <div class="back">
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_7()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- for eighth item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+
+                <div class="card">
+
+                    <!-- product front face -->
+                    <div class="front">
+
+                        <!-- product image -->
+                        <img src="../images/chinese_elm.jpg" class="m8">
+
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Chinese Elm
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $430.25</h2><br>
+                            <p><i>Age: 3.5 years old</i></p><br>
+                            <p><i>Height: 2.1 ft</i></p><br>
+                            <p><i>Origin: China</i></p>
+                            <p class="dprice" style="background-color: #ab0a1a;">55% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- back face of the product -->
+                    <div class="back">
+
+                        <!-- button wrapper -->
+                        <section id="sec_button">
+
+                            <!-- add to card button with function call -->
+                            <button class="cart_button" onclick="pic_8()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- add to card button with function call -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- for ninth item -->
+
+            <!-- main container for width of the card -->
+
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- card front face -->
+                    <div class="front">
+
+                        <!-- product image -->
+                        <img src="../images/european_olive.jpg" class="m9">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            European Olive
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $60.25</h2><br>
+                            <p><i>Age: 3 years old</i></p><br>
+                            <p><i>Height: 3.1 ft</i></p><br>
+                            <p><i>Origin: Japan</i></p>
+                            <p class="dprice">25% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- product back face -->
+                    <div class="back">
+
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_9()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- for tenth item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- front face of the card -->
+                    <div class="front">
+
+                        <!-- product image -->
+                        <img src="../images/fukien_tea.jpg" class="m10">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Fukien Tea
+                        </h1><br>
+
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $170.25</h2><br>
+                            <p><i>Age: 2 years old</i></p><br>
+                            <p><i>Height: 3.6 ft</i></p><br>
+                            <p><i>Origin: Taiwan</i></p>
+                            <p class="dprice" style="background-color: #ab0a1a;">46% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- product back side -->
+                    <div class="back">
+
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_10()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- for 11th item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- product front face -->
+                    <div class="front">
+
+                        <!-- product images -->
+
+                        <img src="../images/ponytail_palm.jpg" class="m11">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Ponytail Palm
+                        </h1><br>
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $30.25</h2><br>
+                            <p><i>Age: 4 years old</i></p><br>
+                            <p><i>Height: 1.3 ft</i></p><br>
+                            <p><i>Origin: Japan</i></p>
+                            <p class="dprice">25% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- product back face -->
+                    <div class="back">
+
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_11()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- for 12th item -->
+
+            <!-- main container for width of the card -->
+            <div class="maincontainer">
+
+                <div class="card">
+
+                    <!-- product front face -->
+                    <div class="front">
+
+                        <img src="../images/power_puff.jpg" class="m12">
+
+                        <!-- name of the product -->
+                        <h1 class="plant_name">
+                            Power Puff
+                        </h1><br>
+                        <!-- section having details of plants -->
+                        <section class="plantdetails">
+                            <h2>Price: $230.25</h2><br>
+                            <p><i>Age: 3 years old</i></p><br>
+                            <p><i>Height: 2.8 ft</i></p><br>
+                            <p><i>Origin: Japan</i></p>
+                            <p class="dprice" style="background-color: #ab0a1a;">48% off</p>
+                        </section>
+
+                    </div>
+
+                    <!-- product back face -->
+                    <div class="back">
+
+                        <!-- section which wraps the add to cart and order button  -->
+                        <section id="sec_button">
+
+                            <!-- add to card button when clicked class a function -->
+                            <button class="cart_button" onclick="pic_12()">
+                                ADD TO CART
+                            </button>
+
+                            <!-- order now button when clicked class a function -->
+                            <button class="order_button" onclick="order()">
+                                ORDER NOW
+                            </button>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- header  close here -->
+
+    <!-- This footer element contains the footer content for the page -->
+    <footer>
+        <div class="footerwrapper">
+
+            <section class="sec1">
+                <!-- This h1 element displays the title for the section -->
+                <h1 class="footer_title">
+
+                    Why to choose BonsaiHub ?</h1>
+
+                <!-- This p element displays the paragraph of text for the section -->
+                <p class="footer_para">Bonsai hub is the best place for the bonsai plants.
+                    We grow the fresh and healthy bonsai plants in good Atmosphere
+                    at Bhaktapur Nursery. You can place a order here according you your mind set
+                    and plant design. We will deliver fresh, beautiful and healthy bonsai at
+                    your home. you can also contact us on 9800909066 for further inquiry about
+                    our business.
+                </p>
+            </section>
+
+            <section class="sec2">
+
+                <!-- This h1 element displays the title for the section -->
+                <h1 class="footer_title" style=" padding-left: 4.8rem;
+        padding-right: 4.8rem;">
+                    ANY INQUIRIES ?</h1>
+
+
+                <!-- This textarea element allows the user to input their feedback -->
+                <form name="inquiry">
+                    <textarea id="feedback" name="feedback"></textarea>
+                </form>
+                <!-- This button element submits the feedback -->
+                <button class="fsumbit" onclick="fback()">SUBMIT</button>
+
+            </section>
+
+            <section class="sec3">
+
+                <ul>
+
+                    <!-- This li element displays the title for the list of links -->
+                    <p class="ulinks">
+                        USEFUL LINKS</p>
+
+
+                    <!-- These li elements contain the links for the list -->
+                    <li><a href="../index.html">HOME</a></li>
+
+                    <li><a href="blog.html">BLOG</a></li>
+
+                    <li><a href="research.html">RESEARCH</a></li>
+
+                    <li><a href="about.html">ABOUT US</a></li>
+
+
+                </ul>
+            </section>
+        </div>
+
+    </footer>
+
+
+
+</body>
+<script>
+    function openver() {
+
+        document.getElementById('resp_nav').style.right = '0%';
+
+    }
+    function closever() {
+
+        document.getElementById('resp_nav').style.right = '100%';
+
+    }
+
+</script>
+
+</html>
